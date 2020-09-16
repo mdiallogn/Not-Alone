@@ -1,0 +1,26 @@
+= Not Alone
+
+NOT ALONE est un jeu asymétrique opposant un joueur (la Créature) aux autres joueurs (les Naufragés).
+
+Si vous incarnez l’un des Naufragés, vous explorerez Artemia au moyen de cartes Lieux. Aidés de vos cartes Survie, vous tenterez de résister à la traque de la Créature jusqu’à l’arrivée des secours.
+
+
+
+Si vous incarnez La Créature, vous traquerez les Naufragés de l’espace afin de les assimiler à la biomasse de la planète. Aidée de vos cartes Traque et des manifestations d’Artemia, vos assauts répétés annihileront progressivement la volonté des Naufragés, ce qui les liera inéluctablement à la planète.
+
+
+== Description
+
+25e siècle, l’Humanité s’est envolée depuis longtemps vers les étoiles. Elle a voyagé aux
+confins de la galaxie et pourtant, elle n’a jamais rencontré d’autres formes de vie intelligente.
+En fouillant les archives centrales de la vieille Terre, vous avez découvert qu’une planète
+du nom d’Artemia avait été rayée des cartes officielles et qu’aucune autre donnée n’était
+disponible. Intrigués, vous montez une expédition.
+Les premiers relevés de la surface d’Artemia révèlent une planète de classe M, accueillante
+pour l’homme et abritant une faune et une flore riches et variées. Lors de votre entrée
+dans l’atmosphère, un puissant champ magnétique met les ordinateurs de bord hors
+service. Après avoir lancé un SOS, le capitaine ordonne l’évacuation du vaisseau avant
+l’inévitable crash.
+Sains et saufs, vous entamez l’exploration des environs lorsque vous entendez les cris
+d’agonie de votre capitaine. Au loin, vous distinguez une silhouette qui vous observe.
+Vous n’êtes pas seul …
