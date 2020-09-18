@@ -1,0 +1,9 @@
+= Projet Not Alone
+
+:imagesdir: images
+:includedir: _sections
+
+include::{includedir}/analyse.adoc[leveloffset=+1]
+include::{includedir}/composants.adoc[leveloffset=+1]
+include::{includedir}/conception.adoc[leveloffset=+1]
+include::{includedir}/termes.adoc[leveloffset=+1]

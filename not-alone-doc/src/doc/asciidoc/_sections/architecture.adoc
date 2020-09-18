@@ -1,0 +1,18 @@
+= Architecture
+
+== Physical View
+
+- Nodes, artifacts for Hearthstone
+- Specification Level Deployment Diagram
+- Instance Level Deployment Diagram
+
+
+
+== Reliability View
+
+- Limit conditions forecast:
+- Initializations
+- Finalization
+
+- Failure management and restart.
+

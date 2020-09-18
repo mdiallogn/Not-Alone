@@ -1,0 +1,16 @@
+= Termes
+
+[.small]
+[width="100%",cols="25%,25%,25%,25%",]
+|===
+|*Terme*
+|*Description courte*
+|*Signification*
+|*Exemples*
+
+| Créature
+| a
+| ax
+|
+
+|===
