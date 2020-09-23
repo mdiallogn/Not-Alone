@@ -1,3 +1,16 @@
 = Analyse du domaine
 
 
+[plantuml, png, class-diagram-example]
+....
+hide circle
+skinparam monochrome true
+
+class Joueur
+
+class Partie
+
+Partie -> "creature [1]" Joueur : \t\t
+
+Partie -> "traques [1-6]" Joueur : \t\t
+....
