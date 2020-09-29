@@ -23,4 +23,10 @@ service. Après avoir lancé un SOS, le capitaine ordonne l’évacuation du vai
 l’inévitable crash.
 Sains et saufs, vous entamez l’exploration des environs lorsque vous entendez les cris
 d’agonie de votre capitaine. Au loin, vous distinguez une silhouette qui vous observe.
-Vous n’êtes pas seul …
+Vous n’êtes pas seul...
+
+== Project Layout
+
+The current source code organization is based on the following article:
+
+https://frakton.com/utilizing-maven-front-end-plugin-for-angular-spring-boot/

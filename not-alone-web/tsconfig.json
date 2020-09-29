@@ -5,17 +5,23 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
+    "module": "ES6",
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "ES5",
     "typeRoots": [
       "node_modules/@types"
     ],
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "core-js/es7/reflect": [
+          "node_modules/core-js/proposals/reflect-metadata"
+      ]
   }
+  },
+  "include": ["target/generated-sources/thrift//**/*", "src/**/*"]
 }

@@ -21,6 +21,7 @@
         <module>not-alone-doc</module>
         <module>not-alone-server</module>
         <module>not-alone-web</module>
+        <module>not-alone-core</module>
     </modules>
 
     <build>
@@ -46,6 +47,16 @@
                     <artifactId>maven-site-plugin</artifactId>
                     <version>3.9.1</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.thrift.tools</groupId>
+                    <artifactId>maven-thrift-plugin</artifactId>
+                    <version>0.1.11</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>3.2.0</version>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
@@ -62,7 +73,11 @@
                 <artifactId>asciidoctorj-pdf</artifactId>
                 <version>1.5.3</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.thrift</groupId>
+                <artifactId>libthrift</artifactId>
+                <version>0.13.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-
 </project>
