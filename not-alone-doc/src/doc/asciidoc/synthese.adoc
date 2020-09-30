@@ -1,0 +1,106 @@
+= Synthèse des règles
+
+== Cartes lieu
+
+.Liste des cartes lieu
+[cols="10,30,60"]
+|===
+
+| N°
+| Nom
+| Pouvoir
+
+| 1
+| L'Antre
+a| Au choix :
+
+- reprenez en main les cartes Lieu de votre défausse (mais pas celui-ci),
+- copiez le pouvoir d'un Lieu où le jeton Créature se trouve,
+
+Perdez 1 Volonté supplémentaire si le jeton Créature vous attrape.
+
+| 2
+| La Jungle
+| Reprenez en main cette carte Lieu et 1 carte Lieu de votre défausse.
+
+| 3
+| La Rivière
+| Au prochain tour, jouez 2 cartes Lieu.
+
+Avant de révéler, choisissez-en une et reprenez l'autre en main.
+
+| 4
+| La Plage
+a| Au choix, 1 fois par tour :
+
+- placez le pion Balise sur la Plage,
+
+- retirez le pion Balise de la Plage pour avancer le pion Secours d’une case (max 1x/tour).
+
+Si plusieurs Traqués explorent la Plage, l’un d’eux peut utiliser le pouvoir de la Plage et les autres peuvent récupérer 1 carte Lieu de leur défausse.
+
+Le pouvoir de la Plage est cumulable avec celui de l’Épave.
+
+| 5
+| Le Rover
+| Prenez de la réserve une carte Lieu que vous ne possédez pas et ajoutez-le à votre main.
+
+
+| 6
+| Le Marais
+a| Reprenez en main cette carte Lieu et 2 cartes Lieu de votre défausse.
+
+.Précision:
+- Si le Marais est révélé grâce au Labyrinthe et que vous l’activez directement, ni le Marais ni le Labyrinthe ne sont repris en main.
+
+| 7
+| L'Abri
+| Piochez 2 carte Survie, gardez-en une et défaussez l'autre.
+
+| 8
+| L'Épave
+| Avancez le pion Secours d'1 case (1 fois par tour, quel que soit le nombre de Traqués explorant l’Épave).
+
+Si plusieurs Traqués explorent l’Épave, l’un d’eux peut utiliser le pouvoir de l’Épave et les autres peuvent récupérer 1 carte Lieu de leur défausse.
+
+Le pouvoir de l’Épave est cumulable avec celui de la Plage.
+
+| 9
+| La Source
+a| Au choix :
+
+- le Traqué de votre choix (vous ou un autre joueur) récupère 1 Volonté,
+- piochez 1 carte Survie.
+
+| 10
+| L'Artefact
+a| Le pouvoir de l'Artefact varie selon la couleur choisie pour la partie.
+
+L’Artefact ne peut être copié (que ce soit par le pouvoir d'un Lieu ou une carte Survie).
+
+.Bleu
+Au prochain tour, jouez 2 cartes Lieu.
+
+Résolvez les deux Lieu individuellement dans l’ordre de votre choix en respectant les règles de la Phase 3.
+
+Lorsqu’un Traqué révèle ses cartes Lieu, s’il peut appliquer les effets de la Rivière et de l’Artefact bleu durant
+un même tour, il doit choisir l’un des deux effets, puis il peut reprendre une carte Lieu de sa défausse.
+
+.Rouge
+Copiez les effets d'1 carte Lieu de votre défausse.
+
+.Vert
+Défaussez 1 carte Lieu et déplacez 1 Traqué de votre choix sur un Lieu adjacent.
+
+.Jaune
+Au choix :
+
+- annulez les effets du jeton Artemia,
+- récupérez 2 cartes Lieu de votre défausse.
+
+|===
+
+
+
+
+== Cartes traque
