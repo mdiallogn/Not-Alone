@@ -476,3 +476,202 @@ a| Au choix:
 | Échangez votre carte Lieu jouée contre 1 carte Lieu de votre défausse.
 
 |===
+
+== Mise en place
+
+.Nombre cartes lieu
+[cols="60h,10,10,10"]
+|===
+| Nombre de Traqués | 1 | 2-3 | 4-6
+| Nombre de Cartes Lieu 6 à 10 | 1 | 2 | 3
+|===
+
+.Mise en place
+[cols="30h,40"]
+|===
+| Action | Description
+
+| Choix
+a|
+. Choisir un mode de difficulté : normal ou expert.
+. Choisir si l'extension Exploration est utilisée.
+. Choisir si la variante Labyrinthe est utilisée (l'extension Exploration est obligatoire dans ce cas).
+. Choisir quel joueur incarne la Créature, les autres joueurs étant les Traqués.
+
+| Créer la planète Artemia
+a|
+. Placer 1 exemplaire des 10 cartes Lieu devant la créature en 2 rangées de chacune 5 cartes, par ordre croissant,
+. Placer le pion Balise à côté de la carte Plage.
+
+| Pioche Traque
+| Mélanger et placer face cachée les cartes Traque à proximité de la Créature.
+
+| Pioche Survie
+| Mélanger et placer face cachée les cartes Survie à proximité des Traqués.
+
+| La Créature:
+a|
+- place le plateau au centre de la table sur la face de son choix,
+- place le pion Secours et le pion Assimilation sur le chiffre de leur piste respective correspondant au nombre de joueurs,
+- pioche 3 cartes Traque et prend les 3 jetons Traque (Créature, Cible et Artemia).
+
+| Chaque Traqué:
+a|
+- prend 3 pions Volonté, les pions Volonté restants sont retirés du jeu,
+- prend un set de 5 cartes Lieu numérotées de 1 à 5, les cartes inutilisées sont retirées du jeu,
+- pioche 1 carte Survie.
+
+| Réserve
+| Former la réserve Lieux avec les cartes Lieu numérotées de 6 à 10.
+
+Placer près du plateau le nombre d’exemplaires de chaque carte Lieu correspondant au nombre de Traqués (voir le tableau "Traqués"), face visible, les cartes inutilisées sont retirées du jeu.
+
+|===
+
+== Conditions de victoire
+
+La Créature remporte immédiatement la partie si le pion Assimilation atteint la case Victoire.
+
+Les Traqués remportent immédiatement la partie si le pion Secours atteint la case Victoire.
+
+== Déroulement d'une partie
+
+.Règles générales
+[cols="30h,70"]
+|===
+| Fonctionnement
+| La partie est une succession de tours de jeu.
+
+| Règle d'or
+| Tout effet ou pouvoir qui contredit la règle prévaut sur elle.
+
+| Informations
+| Les cartes Lieu défaussées par les Traqués sont visibles de tous.
+
+Le nombre de cartes en possession de chacun et leur type (leur dos) est connu de tous, mais il est interdit de montrer ses cartes aux autres joueurs.
+
+Les Traqués peuvent communiquer et bluffer, mais uniquement à voix haute.
+
+| Cartes en main
+| Le nombre de cartes Survie qu’un Traqué peut détenir n’est pas limité.
+
+| Durée des effets
+| Les effets des cartes Traque et des cartes Survie sont limités au tour de jeu en cours.
+
+Les effets d'une carte Survie ciblent uniquement leur propriétaire, sauf indication contraire.
+
+| Ordre de résolution des cartes
+| Les effets des cartes Traque et des cartes Survie jouées lors d’une même phase sont résolus dans l’ordre dans lequel les cartes ont été jouées.
+
+En cas de conflit, la Créature décide de l’ordre de résolution.
+
+| Pions Volonté
+| Un Traqué ne peut jamais avoir plus de 3 pions Volonté en sa possession.
+
+Tout effet qui ferait perdre plus que les pions Volonté restants à un Traqué se limite à lui faire perdre les pions Volonté restants.
+
+| Pioche Survie
+| Si, au moment de piocher, la pile des cartes Survie est vide :
+mélanger les cartes Survie défaussées pour former une nouvelle pioche.
+
+|===
+
+.Tour de jeu
+[cols="30h,70"]
+|===
+| Fonctionnement
+| Résoudre les Phases suivantes dans l'ordre.
+
+| Créature
+| Par défaut, la Créature ne peut jouer qu’1 carte Traque par tour.
+
+| Traqués
+| Chaque Traqué ne peut jouer qu’1 carte Survie par tour, et ce, même s’il est attrapé par la Créature.
+
+| Phase 1 : Exploration
+| Les Traqués jouent simultanément et obligatoirement 1 carte Lieu de leur main en la posant face cachée devant eux.
+
+| Actions optionnelles
+| Avant de jouer une carte Lieu, chaque Traqué peut Résister ou Lâcher prise.
+
+| Résister
+a| Lorsqu'un Traqué Résiste, il choisit 1 des cas suivants :
+
+- perdre 1 pion Volonté pour choisir et reprendre en main 2 cartes Lieu de sa défausse,
+- perdre 2 pions Volonté pour choisir et reprendre en main 4 cartes Lieu de sa défausse.
+
+Si par cette action un Traqué perd son dernier pion Volonté, il doit résoudre Lâcher prise.
+
+| Lâcher prise
+a|
+. Récupérer ses 3 pions Volonté et reprendre en main toutes ses cartes Lieu défaussées,
+. Avancer le pion Assimilation d'1 case.
+
+| Phase 2 : Traque
+a| La Créature pose sur les cartes Lieu d'Artemia de son choix :
+
+- le jeton Créature,
+- le jeton Cible si le symbole se trouve sur une carte Traque jouée,
+- le jeton Artemia si le symbole se trouve sur une carte Traque jouée ou sur une case située sous le pion Secours.
+
+| Précision
+| Plusieurs jetons Traque peuvent être posés sur un même Lieu pour en cumuler leurs effets.
+
+| Phase 3 : Résolution
+| Résoudre les étapes suivantes dans l'ordre :
+
+| 1) Choix des Traqués
+| Les Traqués qui ont le choix parmi plusieurs cartes Lieu décident secrètement du Lieu qu’ils vont explorer.
+
+| 2) Révélation
+| Les Traqués dévoilent simultanément leur carte Lieu.
+
+| 3) Lieux sans jeton Traque
+a| Résoudre les Lieux sans jeton Traque, en sens horaire depuis le joueur à gauche de la Créature. Le Traqué peut au choix, si le Lieu n'est pas inutilisable :
+
+- utiliser le pouvoir du Lieu,
+- reprendre en main 1 carte Lieu au choix de sa défausse.
+
+| 4) Lieu avec jeton Cible
+a| Résoudre le Lieu avec le jeton Cible, en sens horaire depuis le joueur à gauche de la Créature :
+
+A) Chaque Traqué présent sur ce Lieu subit l’effet de la carte Traque,
+
+B) Chaque Traqué présent sur ce Lieu peut au choix, si le Lieu n'est pas inutilisable :
+
+- utiliser le pouvoir du Lieu,
+- reprendre en main 1 carte Lieu au choix de sa défausse.
+
+| 5) Lieu avec jeton Artemia
+a| Résoudre le Lieu avec le jeton Artemia, en sens horaire depuis le joueur à gauche de la Créature :
+
+A) Chaque Traqué présent sur ce Lieu choisit et défausse 1 carte Lieu de sa main,
+
+B) Le pouvoir du Lieu est inutilisable et le Traqué ne peut pas reprendre de carte Lieu de sa défausse.
+
+| 6) Lieu avec jeton Créature
+a| Résoudre le Lieu avec le jeton Créature, en sens horaire depuis le joueur à gauche de la Créature :
+
+A) Le pouvoir du Lieu est inutilisable et le Traqué ne peut pas reprendre de carte Lieu de sa défausse,
+
+B) Avancer immédiatement le pion Assimilation d'1 case,
+
+C) Chaque Traqué présent sur ce Lieu est attrapé par la Créature et perd 1 pion Volonté,
+
+D) Si au moins 1 Traqué perd son dernier pion Volonté : avancer le pion Assimilation d'1 case.
+
+| 7) Récupération
+a| Pour chaque Traqué ayant perdu ses 3 pions Volonté, en fonction du mode de difficulté.
+
+Mode normal:: Il reprend en main toutes les cartes Lieu de sa défausse ainsi que ses 3 pions Volonté.
+
+Mode expert:: Il reprend en main toutes les cartes Lieu de sa défausse ainsi que 2 pions Volonté (le pion restant peut être récupéré par tout autre moyen).
+
+| Phase 4 : Maintenance
+a|
+A) Chaque Traqué défausse sa carte Lieu jouée, face visible de façon à ce que le n° de chacune de ses cartes Lieu défaussées soit visible,
+
+B) La Créature reprend ses jetons Traque et pioche des cartes Traque jusqu’à en avoir 3 en main,
+
+C) Avancer le pion Secours d'1 case, un nouveau tour de jeu commence.
+|===
