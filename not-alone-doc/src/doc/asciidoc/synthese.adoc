@@ -675,3 +675,80 @@ B) La Créature reprend ses jetons Traque et pioche des cartes Traque jusqu’à
 
 C) Avancer le pion Secours d'1 case, un nouveau tour de jeu commence.
 |===
+
+== Extension Exploration
+
+.Liste des cartes lieu (exploration)
+[cols="10,20,70"]
+|===
+| N° | Nom | Effet
+
+| 1
+| Le Nexus
+a|
+. Copiez le pouvoir d'1 Lieu 2à 5.
+. Avancez le pion Assimilation d'1 case supplémentaire si le jeton Créature attrape au moins 1 Traqué sur le Nexus.
+
+| 2
+| L'Oasis
+| Reprenez en main cette carte Lieu plus 1 carte Lieu de votre défausse par Volonté qu'il vous manque, si possible.
+
+| 3
+| Le Fjord
+a| Lors du prochain tour :
+
+. En Phase 1 : vous pouvez jouer une 2ème carte Lieu, face visible, de votre défausse, s'il n'y en a,
+. En Phase 3 : résolvez 1 de ces Lieux,
+. En Phase 4 : défaussez ces 2 cartes Lieu.
+
+| 4
+| Le Dôme
+a|
+. Déplacez le Bouclier d'1 Lieu vers le Dôme.
+. Si le pion Boucler atteint le Dôme : reculer le pion Assimilation d'1 case et replacer le pion Bouclier sur le Lieu 1 (max 1x/tour).
+
+| 5
+| Le Labyrinthe
+a| Au choix :
+
+- révéler un Lieu : retourner, face visible, une des 5 cartes Lieu 6 à 10 de la planète Artemia et activer son pouvoir ou prendre 1 carte Lieu correspondante,
+- prendre de la réserve 1 carte Lieu déjà révélé.
+
+| 6
+| La Mangrove
+a|
+. Échanger les cartes Lieu de sa main contre celles de sa défausse,
+. Reprendre cette carte Lieu en main.
+
+Précision:: Si la Mangrove est révélée grâce au Labyrinthe et que vous l’activez directement,
+ni la Mangrove ni le Labyrinthe ne sont repris en main.
+
+| 7
+| L'Archipel
+a|
+. Piocher 1 carte Survie,
+. S'il vous reste moins de 3 cartes Lieu en main, le Traqué de votre choix récupère 1 Volonté.
+
+| 8
+| Le Pôle
+a|
+. Sacrifiez 1 Volonté (même si c'est le dernier), puis avancez le pion Secours de 2 cases,
+. En Phase 4, replacer le pôle dans la réserve, qu’elle ait pu être activée ou non,
+
+Le Pôle ne peut être copié (que ce soit par le pouvoir d'un Lieu ou une carte Survie).
+
+| 9
+| Les Fungi
+a| Au choix :
+
+- piocher 1 carte Survie,
+- placer jusqu’à 2 pions Volonté (si possible) sur des cases libres différentes de la piste Secours, ce pouvoir est inutilisable si la réserve de pions Volonté est vide ou s’il n’y a plus de case libre pour placer un pion Volonté. Quand le pion Secours atteint une de ces cases : les Traqués décident ensemble qui récupère le pion Volonté. Si un Traqué doit récupérer au moins 1 Volonté alors que la réserve est vide, il prend les pions Volonté disponibles de son choix sur la piste Secours.
+
+| 10
+| Le Portail
+a|
+. Défausser le Portail pour jouer une autre carte Lieu de sa main et la résoudre.
+Le Portail téléporte le Traqué sur le second lieu joué, ce Traqué est donc susceptible de s’y faire attraper par un jeton Traque et/ou d’y être la cible d’une carte Traque,
+. Le Portail est défaussé en phase 3 et la seconde carte Lieu en phase 4.
+|===
+
