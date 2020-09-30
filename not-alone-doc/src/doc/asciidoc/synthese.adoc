@@ -503,6 +503,18 @@ a|
 . Placer 1 exemplaire des 10 cartes Lieu devant la créature en 2 rangées de chacune 5 cartes, par ordre croissant,
 . Placer le pion Balise à côté de la carte Plage.
 
+| Extension Exploration
+a| Choisir les 10 Lieux qui formeront la planète Artemia en s'assurant que chaque n° de 1 à 10 n’apparaisse qu’une seule fois.
+Les Lieux suivants requièrent une mise en place spécifique :
+
+Le Dôme:: Le pion Balise devient le pion Bouclier : le Placer sur la carte Lieu 1 de la planète Artemia.
+
+Le Labyrinthe::
+.  Mélanger les cinq cartes Lieu 6 à 10 qui forment la planète Artemia,
+. Placer aléatoirement face cachée ces 5 cartes sous la rangée des cartes Lieu 1 à 5.
+
+Le Pôle:: La carte Pôle n’existe qu’en 2 exemplaires : la première carte sert à former la planète Artemia et la seconde est placée dans la réserve Lieux, indépendamment du nombre de Traqués.
+
 | Pioche Traque
 | Mélanger et placer face cachée les cartes Traque à proximité de la Créature.
 
