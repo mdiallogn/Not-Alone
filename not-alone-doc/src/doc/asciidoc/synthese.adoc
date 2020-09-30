@@ -122,6 +122,22 @@ Au choix :
 
 == Cartes traque
 
+Fonctionnement::
+Chaque carte Traque possède un nom, une Phase où elle peut être joéue et un effet pouvant être activé par la Créature.
+Certaines cartes Traque possèdent également le symbole Cible ou Artemia.
+Une carte Traque se joue à tout moment de la phase indiquée sur la carte et est ensuite défaussée.
+
+Précision::
+Quand l'effet d'une carte Traque qui indique "Dès que les cartes Lieu sont révélées à la Phase 3" : il est appliqué dès que chaque Traqué a dévoilé sa carte Lieu, avant la résolution des cartes Lieu.
+
+Symbole Cible::
+Lorsqu'une carte Traque avec le symbole Cible est jouée, la Créature pose le jeton Cible sur une des dix cartes Lieu d'Artemia.
+Si la Créature joue 2 cartes Traque avec ce symbole au cours d’un même tour, leurs effets sont cumulés sur le Lieu ciblé.
+
+Symbole Artemia::
+Lorsqu'une carte Traque avec le symbole Artemia est jouée, la Créature pose le jeton Artemia sur une des dix cartes Lieu d'Artemia.
+Si la Créature joue 2 cartes Traque avec ce symbole au cours d’un même tour, leurs effets sont cumulés.
+
 .Liste des cartes traque
 [cols="30,10,60",options="header"]
 |===
