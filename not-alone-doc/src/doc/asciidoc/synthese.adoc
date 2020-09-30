@@ -2,6 +2,23 @@
 
 == Cartes lieu
 
+Fonctionnement:: Chaque carte Lieu possède un n°, un nom et un pouvoir pouvant être activé par les Traqués.
+
+Adjacence:: Deux cartes Lieu sont adjacentes si elles ont un bord en commun, horizontal ou vertical.
+
+Lieux multiples:: Quand un jeton est placé sur 2 Lieux adjacents, le placer à cheval sur ces 2 Lieux.
+
+Copier le pouvoir d'un Lieu:: Pour utiliser cet effet, un Traqué doit pouvoir utiliser le pouvoir de la carte Lieu qu’il a initialement jouée en Phase 1 :
+
+- cet effet permet à ce Traqué d’utiliser un Lieu révélé sans jouer la carte associée, même si ce lieu est inutilisable ou inaccessible pour lui,
+
+- tout jeton Traque sur le Lieu copié est sans effet sur ce Traqué.
+
+Lieu inaccessible:: Un Lieu non révélé est inaccessible pour les Traqués.
+Les jetons Traque peuvent être placés ou déplacés sur un Lieu inaccessible.
+
+Lieu inutilisable:: Lorsqu'un Lieu est inutilisable, son pourovir peut être copié grâce au pouvoir d’une carte Lieu ou d’une carte Survie.
+
 .Liste des cartes lieu
 [cols="10,30,60",options="header"]
 |===
