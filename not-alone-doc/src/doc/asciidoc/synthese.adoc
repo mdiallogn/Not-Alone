@@ -316,6 +316,10 @@ Si un jeton Traque se trouve sur 2 Lieux adjacents, le jeton qui le remplace est
 
 == Cartes survie
 
+Fonctionnement::
+Chaque carte Survie possède un nom, une Phase où elle peut être joéue et un effet pouvant être activé par le Traqué qui la détient.
+Une carte Survie se joue à tout moment de la phase indiquée sur la carte et est ensuite défaussée.
+
 .Liste des cartes survie
 [cols="30,10,60"]
 |===

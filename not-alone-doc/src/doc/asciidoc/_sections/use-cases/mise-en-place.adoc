@@ -1,0 +1,69 @@
+
+[cols="30s,70n",options="header", frame=sides]
+|===
+| Item | Description
+
+| # | 1
+| Use Case	| Mise en place
+
+| AKA
+|
+
+| Goal in Context | goal
+
+| Scope	| scope
+
+| Level	| Summary
+| Success End Condition	|
+| Failed End Condition	|
+| Primary Actor |	An Actor
+
+| Secondary Actor 
+| Another Actor
+
+| Trigger	|
+| Priority	| High/Low
+
+| Frequency	| Once per week
+
+
+| Pre-conditions 
+| before
+
+| Post-conditions
+| after
+
+|Main success scenario
+a|
+. The `Traqué` starts
+. The `Creature` specifies
+. <action or use-case>
+. <action or use-case>
+. <action or use-case>
+
+| Extensions	
+a| . <#> : <condition> : <action or use-case>
+. <#> : <condition> : <action or use-case>"
+
+| Variations	
+a| . <#> : <action or use-case>
+. <#> : <action or use-case>
+|Superordinate Use Case	| None
+|Subordinate Use Cases	| optional, depending on tools, links to sub.use cases
+|Performance Target	|the amount of time this use case should take
+
+|Open Issues	
+a|
+* is it real ?
+
+|Schedule	|
+|Constraints	|
+|Annexes
+| ss
+|===
+
+
+
+
+
+

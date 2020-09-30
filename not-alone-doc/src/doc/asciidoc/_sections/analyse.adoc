@@ -34,3 +34,5 @@ Partie -> "creature [1]" Joueur : \t\t
 
 Partie -> "traques [1-6]" Joueur : \t\t
 ....
+
+include::./use-cases/use-cases.adoc[]
