@@ -104,3 +104,179 @@ Au choix :
 
 
 == Cartes traque
+
+.Liste des cartes traque
+[cols="30,10,60"]
+|===
+| Nom
+| Phase
+| Effet
+
+| Acharnement
+| 2
+| Le jeton Créature fait perdre 1 Volonté supplémentaire.
+
+| Angoisse
+| 1 - Artémia
+| Les traqués ne peuvent pas Résister.
+
+| Anticipation
+| 2
+| Désigner 1 Traqué : si vous l’attrapez avec le jeton Créature, avancez le jeton Assimilation d’1 case supplémentaire.
+
+| Cataclysme
+| 3
+| Le pouvoir du Lieu de votre choix est inutilisable.
+
+| Champ de force
+| 1 - Cible
+| Avant que les Traqués ne jouent, ciblez 2 Lieux adjacents : ces Lieux sont inaccessibles pour ce tour.
+
+| Clone
+| 2 - Cible
+| Considérez le jeton Cible comme un second jeton Créature.
+
+| Déploiement
+| 3
+| Dès que les cartes Lieu sont révélées en Phase 3, reculer le pion Assimilation d'1 case
+pour déplacer le jeton Créature sur un Lieu adjacent.
+
+| Désespoir
+| 1 - Artemia
+| Aucune carte Survie ne peut être jouée ou piochée pour le reste du tour.
+
+| Détour
+| 3
+| Avant de résoudre les Lieux, déplacer 1 Traqué vers 1 Lieu adjacent.
+
+| Domination
+| 2
+|Poser cette carte devant 1 Traqué : à la fin de chaque tour, celui-ci doit défausser 1 carte Lieu de sa
+main.
+
+Si ce Traqué tombe à 0 Volonté, défausser cette carte.
+
+| Effroi
+| 1
+| Obligez un Traqué qui utilise l'action Résister à Lâcher prise.
+
+| Emprise
+| 2
+| Cibler 1 Traqué : il défausse toutes ses cartes Lieu sauf 2.
+
+| Épidémie
+| 2
+a| Désignez 1 Traqué :
+
+- le Lieu où il se trouve est inutilisable,
+- chaque autre Traqué présent sur ce Lieu perd 1 Volonté.
+
+| Faille temporelle
+| 2 - Cible
+| Pour chaque Traqué présent sur le Lieu ciblé, avancer le pion Assimilation d'autant de cases, puis le pion Secours d'autant de cases.
+
+| Flashback
+| Spécial
+| À jouer à la phase de la carte copiée : copier la dernière carte Traque défaussée.
+
+| Gargantua
+| 2
+| Placer le jeton Créature sur 2 Lieux adjacents : ses effets s'appliquent sur ces 2 Lieux.
+Si un Traqué copie le pouvoir du Lieu où se trouve le jeton Créature, il copie 1 seul des 2 Lieux.
+
+| Harcèlement
+| 2
+| Chaque Traqué ne peut récupérer qu'1 carte Lieu quand il utilise le pouvoir d'un Lieu.
+
+| Hurlements
+| 2 - Cible
+| Chaque Traqué présent sur le Lieu ciblé doit, selon son choix, défausser 2 cartes Lieu ou perdre 1 Volonté.
+
+| Inertie
+| 2 - Cible
+| Dès que les cartes Lieu sont révélées à la Phase 3, si au moins 1 Traqué se trouve sur le Lieu ciblé :
+les pouvoirs de tous les Lieux sont inutilisables, les effets des jetons Créature et Artemia sont quand même résolus.
+
+| Interférences
+| 2
+a| Au choix:
+
+- les pouvoirs de la Plage et de l’Épave sont inutilisables,
+- reculer le pion Bouclier d'1 Lieu.
+
+| Intuition
+| 1
+a|
+. Piocher 3 cartes Traque,
+. Jouer 1 de ces cartes durant le tour et défausser les 2 autres.
+
+| Magnétisme
+| 2 - Cible
+| Dès que les cartes Lieu sont révélées en Phase 3, chaque Traqué adjacent au Lieu ciblé est déplacé sur le Lieu ciblé.
+
+| Mirage
+| 2 - Cible
+| Ciblez 2 Lieux adjacents (placer le jeton Cible entre ces 2 Lieux) : leur pouvoir est inutilisable.
+
+| Mutation
+| 2 - Artemia
+| En plus de ses effets, le jeton Artemia fait perdre 1 Volonté.
+
+| Psychose
+| 2 - Artemia
+| Désigner 1 Traqué : il vous montre toutes les cartes Lieu de sa main sauf 2.
+
+| Réminiscence
+| 2 - Artemia
+| Reprendre 1 carte Traque de la défausse.
+
+| Repérage
+| 4
+| Au prochain tour, vous pouvez jouer jusqu’à 2 cartes Traque.
+
+| Sables mouvants
+| 2 - Cible
+| Chaque Traqué présent sur le Lieu ciblé choisit et défausse toutes les cartes Lieu de sa main sauf 2.
+
+| Soif de sang
+| 2 - Cible
+a|
+. Chaque Traqué présent sur le Lieu ciblé récupère 1 Volonté, si possible,
+. Chaque Traqué présent sur un Lieu adjacent au Lieu ciblé perd 1 Volonté.
+
+| Stase
+| 4
+| Le pion Secours n'avance pas lors de cette Phase.
+
+| Télépathie
+| 2 - Artemia
+a|
+. Désigner 1 Lieu,
+. Choisir 1 Traqué, tirer au hasard 1 carte de sa main et la défausser,
+. Si la carte correspond au Lieu désigné : avancer le pion Assimilation d'1 case.
+
+| Tornade
+| 2 - Artemia
+| Dès que les cartes Lieu sont révélées à la Phase 3, vous pouvez déplacer le jeton Artemia sur un Lieu adjacent.
+
+| Toxine
+| 2 - Cible
+| Chaque Traqué sur le Lieu ciblé défausse 1 carte Survie.
+
+Le pouvoir de ce lieu est inutilisable.
+
+| Ubiquité
+| 2 - Artemia + Cible
+| Dès que les cartes Lieu sont révélées à la Phase 3, vous pouvez permuter les jetons Traque.
+
+Si un jeton Traque se trouve sur 2 Lieux adjacents, le jeton qui le remplace est placé sur ces 2 Lieux adjacents.
+
+| Virus
+| 2 - Artemia
+| Ciblez 2 Lieux adjacents : les effets du jeton Artemia s'appliquent sur ces 2 Lieux.
+
+| Zone interdite
+| 2
+| Tous les Traqués défaussent simultanément 1 carte Lieu de leur choix.
+
+|===
