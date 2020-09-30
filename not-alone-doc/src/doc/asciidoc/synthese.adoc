@@ -3,7 +3,7 @@
 == Cartes lieu
 
 .Liste des cartes lieu
-[cols="10,30,60"]
+[cols="10,30,60",options="header"]
 |===
 
 | N°
@@ -106,7 +106,7 @@ Au choix :
 == Cartes traque
 
 .Liste des cartes traque
-[cols="30,10,60"]
+[cols="30,10,60",options="header"]
 |===
 | Nom
 | Phase
@@ -278,5 +278,164 @@ Si un jeton Traque se trouve sur 2 Lieux adjacents, le jeton qui le remplace est
 | Zone interdite
 | 2
 | Tous les Traqués défaussent simultanément 1 carte Lieu de leur choix.
+
+|===
+
+== Cartes survie
+
+.Liste des cartes survie
+[cols="30,10,60"]
+|===
+| Nom | Phase | Effet
+
+| Adrénaline
+| 1
+| Récupérez 1 Volonté.
+
+| Alerte
+| 3
+a| Désigner 1 Lieu :
+
+- les jetons Traque présents sur ce Lieu sont sans effet,
+- le pouvoir de ce Lieu est inutilisable.
+
+| Amplificateur
+| 4
+a| Au choix:
+
+- retirez le jeton Balise de la Plage pour avancer le pion Secours d’1 case,
+- avancez le pion Bouclier d'1 Lieu vers le Dôme.
+
+| Brouillage
+| 1
+| Tous les Traqués cachent les cartes Lieu de leur défausse jusqu’à la fin du tour
+
+| Cavale
+| 1
+a|
+. Jouez 3 cartes Lieu,
+. En Phase 3 : révélez celle de votre choix,
+. En Phase 4 : reprenez en main la carte révélée et défaussez les 2 autres.
+
+| Détecteur
+| 3
+| Évitez les effets du jeton Artemia.
+
+| Drone
+| 3
+| À la place d'utiliser le pouvoir de votre carte Lieu,
+prenez de la réserve 1 carte d'un Lieu révélé que vous ne possédez pas et
+ajoutez-la à votre main.
+
+| Entrave
+| 1
+| Le jeton Créature ne peut pas être posé sur les Lieux 6 à 10.
+
+| Équipement
+| 4
+a| Au choix :
+
+- piochez 1 carte Survie,
+- prenez la carte Survie du dessus de la défausse.
+
+| Esquive
+| 3
+| Évitez les effets du jeton Créature.
+
+| Fausse piste
+| 3
+| Déplacez le jeton Créature sur un Lieu adjacent.
+
+| Hologramme
+| 3
+| Déplacez le jeton Artemia sur un Lieu adjacent.
+
+| Leurre
+| 3
+a|
+. Permutez 2 jetons Traque,
+. Reprenez 1 carte Lieu de votre défausse.
+
+| Mimétisme
+| 1
+| En Phase 3, si vous êtes sur le même Lieu que le jeton Créature : avancez le pion Secours d'1 case,
+vous ne subissez pas les effets du jeton Créature.
+
+| Navette
+| 4
+| Jouer cette carte quand le pion Secours se trouve à 1 case de la case Victoire :
+les Traqués reportent la partie.
+
+| Planques
+| 4
+| Piocher 2 cartes Survie et les placer face cachée chacune sous 1 Lieu d'Artemia :
+si un Traqué explore un de ces Lieux et peut utiliser son pouvoir,
+il peut également récupérer la carte Survie qui s'y trouve.
+
+| Portail
+| 3
+| À la place d'utiliser le pouvoir de votre carte Lieu, copiez le pouvoir d’1
+Lieu adjacent.
+
+| Ralliement
+| 4
+| Chaque Traqué attrapé par le jeton Créature peut reprendre en main la carte Lieu sur laquelle il s'est fait attraper.
+
+| Refuge
+| 1
+| Poser le jeton Cible sur 2 Lieux adjacents : le jeton Créature ne peut être posé sur
+ces Lieux Aucune carte Traque avec le symbole Cible ne peut être jouée.
+
+| Régénération
+| 3
+| À la place d'utiliser le pouvoir de votre carte Lieu,
+copiez le pouvoir d’1 carte Lieu de votre défausse.
+
+| Résistance
+| 3
+| Évitez les effets du jeton Cible.
+
+| Retraite
+| 3
+| Déplacez 1 Traqué de votre choix sur un Lieu adjacent, le Lieu de destination n'est pas résolu.
+
+| Riposte
+| 1
+| Tirer 2 cartes Traque au hasard de la main de la Créature et placez-lez sous la pioche Traque.
+
+| Sacrifice
+| 1
+| Défaussez 1 carte Lieu : aucune carte Traque ne peut être jouée ce tour-ci.
+
+| Second souffle
+| 1
+| Si vous avez au plus 1 carte Lieu en main : récupérez toutes les cartes Lieu de votre défausse.
+
+| Sixième sens
+| 1
+| Reprenez en main 2 carte Lieu de votre défausse.
+
+| Système D
+| 1
+a| Au choix:
+
+- placez le pion Balise sur la Plage,
+- avancez le pion Bouclier d'1 Lieu vers le Dôme.
+
+| Ténacité
+| 1
+| Récupérez 1 carte Lieu supplémentaire pour chaque Volonté dépensée dans l'action Résister.
+
+| Vaccin
+| 1
+| Reculer le pion Assimilation d'1 case.
+
+| Volte-face
+| 4
+| Reprenez en main votre carte Lieu jouée.
+
+| Vortex
+| 2
+| Échangez votre carte Lieu jouée contre 1 carte Lieu de votre défausse.
 
 |===
