@@ -92,12 +92,13 @@ nombre de joueurs +
   - un tour se termine +
   - certaines cartes provoquent cette action
 |
-
+ 
 | Pion Volonté
 | Pion détenu par les Traqués qui lui permet de résister à la Créature, à chaque fois qu'un Traqué perd la totalité de ses pions volontés, la Créature gagne du terrain et se rapproche de la victoire jusqu'à un certain rang
 |- Si un Traqué perd son dernier pion Volonté, avancez immédiatement le pion Assimilation de 1 case, quel que soit le nombre de Traqués attrapés,puis chaque Traqué récupère ses 3 pions et ses cartes Lieu + 
  - Chaque Traqué qui explore le lieu où se trouve le jeton Créature perd 1 pion Volonté 
 |
+
 
 | Pion Balise
 | Se trouvant sur la carte Lieu plage, peut être activé par les traqués afin de faire avancer le pion secours et ainsi s'extirper d'Artemia et être secouru. 
