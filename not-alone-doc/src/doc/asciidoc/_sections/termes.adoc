@@ -99,7 +99,6 @@ nombre de joueurs +
  - Chaque Traqué qui explore le lieu où se trouve le jeton Créature perd 1 pion Volonté 
 |
 
-
 | Pion Balise
 | Se trouvant sur la carte Lieu plage, peut être activé par les traqués afin de faire avancer le pion secours et ainsi s'extirper d'Artemia et être secouru. 
 |- Placé initialement : à côté de la carte Plage [5] + 
