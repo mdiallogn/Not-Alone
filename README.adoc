@@ -30,3 +30,37 @@ Vous n’êtes pas seul...
 The current source code organization is based on the following article:
 
 https://frakton.com/utilizing-maven-front-end-plugin-for-angular-spring-boot/
+
+== Livrables attendus
+
+=== Analyse du domaine
+
+Objectif::
+Description du jeu _Not Alone_ sous la forme d'un diagramme de classes conceptuelles et d'actions
+
+Moyens::
+Utilisez une approche itérative pour découvrir toutes les classes conceptuelles et les actions du jeu.
+
+=== Conception préliminaire
+
+Objectif::
+Découpage de la solution en composants (ou sous-systèmes) et spécification des interfaces fournies et requises par ces composants
+
+Moyens::
+Utilisez des diagrammes d'interaction (séquence, communication) pour décrire l'échange de messages entre les composants pour en déduire leurs interfaces.
+
+=== Conception détaillé
+
+Objectif::
+Spécification détaillée des composants: leur structure (diagramme de classes de conception), ainsi que le comportement de chaque opération fournie par le composants. Le comportement peut-être décrit en utilisant les diagrammes d'activité, d'interaction, les machines d'état, ainsi que OCL.
+
+Moyens::
+Appliquez les concepts vus en cours: design patterns, principes GRASP, bonnes pratiques, etc. 
+
+=== Code source
+
+Objectif::
+Code de mise en oeuvre et tests de l'application.
+
+Moyens::
+Appliquez les enseignements de l'UE "Construction et évolution de logiciels" pour produire un code source de qualité.
