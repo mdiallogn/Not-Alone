@@ -1,1 +1,83 @@
 = Conception détaillée
+
+
+== Game Server
+
+.GameSever
+[plantuml]
+....
+interface GameServer {
+    createGame(numberOfPlayers : Integer): Integer
+    join(gameId : Integer): Integer
+    start()
+}
+
+package game {
+    class "GameServerController" as controller {
+        createGame(numberOfPlayers : Integer): Integer
+        join(gameId : Integer): Integer
+        start()
+    }
+    class "Game" as game {
+        id : Integer {id}
+        numberOfPlayers : Integer
+    }
+    class "Player" as player {
+        id : Integer {id}
+    }
+    GameServer <|-- controller
+    controller *- "[*] games" game : \t\t\t
+    controller *-- "[0..7] players" player
+}
+note right of game: Uncompleted!
+....
+
+[plantuml]
+....
+state Game {
+    [*] --> Created
+    Created -> Started : start()
+    Started -> Phase1 : \t
+    Phase1 --> [*]
+}
+note right of Game : Uncompleted!
+....
+
+=== Opérations du GameServerController
+
+.Create Game
+[source,OCL]
+----
+GameServerController::createGame(numberOfPlayers : Integer): Integer
+pre:
+    numberOfPlayers > 1 and numberOfPlayers <= 7
+
+post:
+    self.games -> exists(each | each.isOclNew())and
+    game.oclinState(Created)
+----
+
+.Join Game
+[source,OCL]
+----
+GameServerController::join(gameId : Integer): Integer
+pre:
+    self.games -> exists(each | each.id = gameId)
+post:
+    let game = self.games->select(id = gameId)->first() in
+    game.players->exists(each| each.isOclNew())
+----
+
+.Start Game
+[plantuml]
+----
+partition GameServerController::start() {
+    start
+    while (enough players?)
+        :JoinRequest<
+        :handleRequest();
+    endwhile
+    :Game Start>
+    stop
+}
+----

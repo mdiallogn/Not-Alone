@@ -1,1 +1,40 @@
 = Conception préliminaire
+
+== Création d'une partie
+
+.Join game
+[plantuml]
+....
+participant "__one:Player__" as player1
+participant "__two:Player__" as player2
+participant "__three:Player__" as player3
+participant "__four:Player__" as player4
+participant "__five:Player__" as player5
+participant "__six:Player__" as player6
+participant "__game:GameServer__" as game
+
+player1 -> game : id := createGame(6)
+par
+    player1 -> game : playerId := join(id, one)
+    player2 -> game : playerId := join(id, two)
+    player3 -> game : playerId := join(id, three)
+    player4 -> game : playerId := join(id, four)
+    player5 -> game : playerId := join(id, five)
+    player6 -> game : playerId := join(id, six)
+end
+game -> game : start()
+....
+
+.Questions ouveres (à faire)
+- Les joeurs ne peuvent pas envcoyer juste une `id`, ils doivent aussi envoyer une adress/port pour que le serveur puisse les contacter
+- Le serveur doit prévenir les joueurs du début de la partie.
+
+.L'interface GameServer
+[plantuml]
+....
+interface GameServer {
+    createGame(numberOfPlayers : Integer): Integer
+    join(gameId : Integer): Integer
+    satrt()
+}
+....
