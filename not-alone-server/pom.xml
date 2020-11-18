@@ -16,10 +16,6 @@
 	<name>Not Alone Server</name>
 	<description>Spring Boot Not Alone server</description>
 
-	<properties>
-		<java.version>11</java.version>
-	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>fr.univnantes.alma</groupId>

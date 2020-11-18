@@ -20,5 +20,4 @@ public interface GameService {
      */
     int join(int gameId, GameJoinRequest request);
 
-    void start(int gameId) throws InterruptedException;
 }

@@ -22,16 +22,8 @@ public class GameServiceHandler implements GameServerService.Iface {
 
     @Override
     public int join(int gameId, JoinRequest request) throws TException {
+        //TODO: translate JoinRequest into GameJoinRequest
         return service.join(gameId, new GameJoinRequest());
-    }
-
-    @Override
-    public void start(int gameId) throws GameNotFound, TException {
-        try {
-            service.start(gameId);
-        } catch (InterruptedException e) {
-            throw new GameNotFound();
-        }
     }
 
 }

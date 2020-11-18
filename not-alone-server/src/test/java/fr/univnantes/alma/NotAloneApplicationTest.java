@@ -50,7 +50,7 @@ class NotAloneApplicationTest {
         client.join(id, new JoinRequest("two"));
         client.join(id, new JoinRequest("three"));
         client.join(id, new JoinRequest("four"));
-        client.start(id);
+
 
         Thread.sleep(1000);
     }

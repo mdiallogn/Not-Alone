@@ -22,7 +22,6 @@ par
     player5 -> game : playerId := join(id, five)
     player6 -> game : playerId := join(id, six)
 end
-game -> game : start()
 ....
 
 .Questions ouveres (à faire)
@@ -35,6 +34,5 @@ game -> game : start()
 interface GameServer {
     createGame(numberOfPlayers : Integer): Integer
     join(gameId : Integer): Integer
-    satrt()
 }
 ....

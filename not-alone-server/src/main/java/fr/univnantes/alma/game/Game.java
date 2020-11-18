@@ -20,9 +20,14 @@ public class Game {
 
     private final AtomicInteger expectedPlayers;
 
+    private Thread play;
+
     public Game(int expectedPlayers) {
         this.expectedPlayers = new AtomicInteger(expectedPlayers);
         this.requests = new ArrayBlockingQueue<GameJoinRequest>(expectedPlayers);
+
+        play = new Thread(() -> this.start());
+        play.start();
     }
 
     public int join(GameJoinRequest request) {
@@ -31,13 +36,10 @@ public class Game {
         return id;
     }
 
-    public void start() {
-        Thread t = new Thread(() -> {
-            this.waitForPlayers();
-            Log.info("We can start !");
-        }
-        );
-        t.start();
+    private void start() {
+        this.waitForPlayers();
+        Log.info("We can start !");
+
     }
 
     private void waitForPlayers() {

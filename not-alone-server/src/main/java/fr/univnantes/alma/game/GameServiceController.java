@@ -34,10 +34,4 @@ public class GameServiceController implements GameService {
         return game.join(request);
     }
 
-    @Override
-    public void start(int gameId) throws InterruptedException {
-        Game game = games.get(gameId);
-        game.start();
-    }
-
 }
