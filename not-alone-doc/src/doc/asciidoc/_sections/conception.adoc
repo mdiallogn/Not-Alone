@@ -1,1 +1,9 @@
 = Conception détaillée
+== Diagramme de Séquences
+include::./diagrams/sequences.puml[]
+== Diagramme de Séquences
+
+== Diagramme de classes
+include::./diagrams/classes.puml[]
+== Diagramme de classes
+

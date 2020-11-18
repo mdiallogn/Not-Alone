@@ -1,0 +1,130 @@
+@startuml
+
+interface Carte {
+}
+abstract class CartesCreature
+abstract class CartesTraques{
+    nom : String
+    phase : int
+    pouvoir : boolean
+}
+class Lieu
+class Manifestation
+class Survie
+
+class CarteTraque{
+    nom : String
+    phase : int
+    symbole : Object
+
+    abstract pouvoir() : void
+}
+
+abstract class Pion
+class Assimilation
+class Secours
+class Volonte
+class Balise
+
+class Maitre{
+placerPion(pion Pion): void
+formerReserve(): void
+placerCartes(liste Lis<Carte>): void
+avancerPion(pion Pion): void
+}
+
+class Plateau{
+    cases : List<Case>
+}
+Plateau - Pion
+Plateau - Jeton
+
+abstract class Joueur{
+    main : List<Carte>
+    defausse : List<Carte>
+    cratesJouees : List<Carte>
+
+    jouer(carte Cartes): void
+    piocher(carte Cartes, int nb): void
+    defausserCarte(carte Carte): void
+}
+class Creature {
+     listeCartesCreat : List<CartesCreature>
+     listeJetons : List<Jeton>
+
+     traquer(jouer Traque): void
+     affectuerAssaut(): void
+     //(CartesTraques ou Manifestation)
+     placerPlater(): void
+     poserJeton(jeton Jeton, carte Carte): void
+}
+class Traque{
+    listeCartesTraq : List<CartesTraques>
+    pion : Volonte
+    explorer(carteLieu Carte): void
+    resister(carte Survie): void
+    activerPouvoirCarte(carte Carte): void
+    lacherPrise(): void
+}
+
+abstract Jeton
+class Artemia
+class Cible
+class JetonCreature
+class Case
+
+
+Carte <|.. CartesCreature
+Carte <|.. CartesTraques
+
+CartesTraques <|-- Lieu
+CartesTraques <|-- Survie
+
+CartesCreature <|-- Manifestation
+CartesCreature <|-- CarteTraque
+
+Pion <|-- Assimilation
+Pion <|-- Secours
+Pion <|-- Volonte
+Pion <|-- Balise
+
+
+Jeton <|-- Artemia
+Jeton <|-- Cible
+Jeton <|-- JetonCreature
+
+Joueur <|-- Creature
+Joueur <|-- Traque
+
+Creature - CartesCreature : possède >
+Traque - CartesTraques : possède >
+Creature - Jeton : utilise >
+Traque - Pion : utilise >
+
+
+
+class Antre
+class Jungle
+class Riviere
+class Plage
+class Rover
+class Marais
+class Abri
+class Epave
+class Source
+class Artefa
+
+Lieu <|-- Antre
+Lieu <|-- Jungle
+Lieu <|-- Riviere
+Lieu <|-- Plage
+Lieu <|-- Rover
+Lieu <|-- Marais
+Lieu <|-- Abri
+Lieu <|-- Epave
+Lieu <|-- Source
+Lieu <|-- Artefa
+
+@enduml
+
+

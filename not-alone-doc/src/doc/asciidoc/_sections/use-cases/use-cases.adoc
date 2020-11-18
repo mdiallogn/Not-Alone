@@ -3,6 +3,72 @@
 
 [plantuml, uc-not-alone, png]
 ....
+
+
+left to right direction
+skinparam packageStyle rectangles
+actor Traque_PhaseRes
+actor Maitre_PhaseRes
+rectangle "Phase Résolution" {
+    Traque_PhaseRes -- (Reprend un pion "Volonté")
+    Traque_PhaseRes -- (Reprend une carte de la défausse)
+    Traque_PhaseRes -- (Utilise le pouvoir de la carte Lieu)
+    Traque_PhaseRes -- (Dévoile la carte Lieu)
+    Traque_PhaseRes -- (Défausse une carte)
+    Maitre_PhaseRes -- (Enlève le pion Volonté)
+    Maitre_PhaseRes -- (Avance le pion Assimilation)
+}
+
+left to right direction
+skinparam packageStyle rectangles
+actor Traque_PhaseMain
+actor Creature_PhaseMain
+rectangle "Phase Maintenance" {
+    Traque_PhaseMain -- (Défausse les cartes)
+    Traque_PhaseMain -- (Pioche les cartes Traque)
+    Creature_PhaseMain -- (Reprend les Jétons)
+}
+
+
+left to right direction
+skinparam packageStyle rectangles
+actor Traque_PhaseTr
+rectangle "Phase Traque" {
+    Traque_PhaseTr -- (Pose un Jéton)
+    Traque_PhaseTr -- (Joue une carte Traque)
+}
+
+
+
+left to right direction
+skinparam packageStyle rectangle
+actor Maitre
+actor Traque
+actor Creature
+rectangle "Inialisation du Jeu" {
+  Maitre -- (Placer les pions)
+  Maitre -- (Placer les cartes)
+  Maitre -- (Retirer les cartes)
+  Traque -- (Prend les pions "Volonté")
+  Traque -- (Prend une carte Traque)
+  Creature -- (Prend les jetons)
+  Creature -- (Prend cartes créature)
+  Creature -- (Placer le plateau)
+}
+
+
+left to right direction
+skinparam packageStyle rectangles
+actor Maitre_Exp
+actor Traque_Exp
+rectangle "Phase Exploration" {
+    Maitre_Exp -- (Avancer les pions)
+    Traque_Exp -- (Résister)
+    Traque_Exp -- (Lâcher prise)
+    Traque_Exp -- (Jouer une Carte Lieu "face cachée")
+    (Jouer une Carte Lieu "face cachée") .> (Avancer les pions) : entraine
+}
+
 left to right direction
 skinparam packageStyle rectangle
 actor Client_Application
@@ -12,6 +78,7 @@ rectangle "Not Alone" {
   Client_Application -- (Discovery)
   Bob -- (Mise en place)
 }
+
 ....
 
 === Mise en place

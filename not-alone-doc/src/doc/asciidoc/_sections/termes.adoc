@@ -1,16 +1,203 @@
-= Termes
+ = Termes
 
 [.small]
 [width="100%",cols="25%,25%,25%,25%",]
 |===
 |*Terme*
 |*Description courte*
-|*Signification*
-|*Exemples*
+|*Spécification* +
+(si nécéssaire)
+|*Exemples* +
+(si pertinent)
 
 | Créature
-| a
-| ax
+| Joueur dont le rôle est d'assimiler les Traqués
+| - Il ne doit y avoir qu'une seule Créature +
+- La Créature a gagné lorsque tous les Traqués sont assimilés +
+- La Créature commence la partie avec : +
+- 3 cartes Traque (pioche) +
+- 3 jetons Traque
+| La Créature sera nommé dans nos exemples 'joueur A' (ou la Créature)
+
+| Traqué
+| Joueur dont l'objectif est de survivre à la Créature en attendant les secours
+| - La Créature a perdu si les Traqués réussissent à rejoindre les secours+
+- Chaque Traqué commence la partie avec : +
+- 3 pions Volonté +
+- Un set de 5 cartes Lieu numérotées de 1 à 5 : Antre, Jungle, Rivière, Plage et Rover +
+et pourra explorer de nouveaux lieux de 6 à 10 : Marais, Abri, Épave, Source et Artefact +
+- 1 carte Survie (pioche)
+| Nous prendrons pour illustrer nos exemples, 2 Traqués appelés 'joueur 1' et 'joueur 2' (ou bien les autres joueurs ou les Traqués)
+
+| Artemia
+| Planète sur laquelle se déroule le jeu. Se représente sous la forme des 10 cartes lieu dans une partie
+| Est formée par la disposition par ordre croissant d'un exemplaire des 10 cartes Lieu en 2 rangées de 5 cartes
 |
 
+| Carte lieu
+| Carte représentant des lieux de la planète Artémia utilisée par les Traqués pour se déplacer dans l'environnement
+| - Il y a 10 cartes lieu différentes dans le jeu représantant Artemia +
+- Chaque carte lieu possède : un numéro, un nom, un pouvoir +
+- Les cartes lieu sont adjacentes horizontalement et verticalement
+| Carte "Épave" : Avancer le pion secours de 1 case. (max 1x/tour)  [n°8]
+
+| Carte survie
+| Carte augmentant les chances des Traqués de résister aux assauts de la Créature jusqu'à l'arrivée des secours
+| - Initialement, ces cartes sont mélangées et disposées à proximité et à usage des Traqués +
+- Chaque carte survie possède une phase, un nom et un pouvoir +
+- Chaque Traqué ne peut jouer qu'une seule carte survie par tour +
+- Le nombre de cartes Survie qu’un Traqué peut détenir n’est pas limité +
+- Effet limité au tour de jeu en cours, peut modifier les règles générales +
+[.small]#-NB : Les effets des cartes Traque et des cartes Survie jouées lors d’une même phase sont
+résolus dans l’ordre dans lequel les cartes ont été jouées. En cas de conflit, la Créature
+décide de l’ordre de résolution#
+| Carte "Esquive" : Éviter les effets du jeton Créature (PHASE 3)
+
+
+|Carte traque
+| Carte augmentant les chances de la créature de traquer et assimiler les autres joueurs
+| - Initialement, ces cartes sont mélangées et disposées à proximité et à usage de la Créature +
+- Chaque carte traque possède une phase, un nom et un pouvoir (pouvant être activé par la Créature)+
+- Certaines cartes possèdent également le symbole Cible ou Artemia +
+- La Créature ne peut jouer qu’une seule carte Traque par tour +
+- effet limité au tour de jeu en cours, peut modifier les règles générales +
+[.small]#-NB : Les effets des cartes Traque et des cartes Survie jouées lors d’une même phase sont
+résolus dans l’ordre dans lequel les cartes ont été jouées. En cas de conflit, la Créature
+décide de l’ordre de résolution#
+| Carte "Clone" : considérer le jeton Cible comme un 2nd jeton Créature
+
+
+| Plateau
+| Représentation de la progression du jeu
+| - Possède un recto et un verso +
+|
+
+| Pion Assimilation
+| Pion représentant l'avancée de la partie côté Créature. Plus le pion assimilation avance plus la Créature est proche de la victoire
+|placé initialement sur le chiffre de sa
+piste respective correspondant au
+nombre de joueurs +
+doit être avancé d'une case si : +
+- un Traqué lâche prise +
+- au moins un Traqué se retrouve sur une carte lieu assignée d'un jeton Créature +
+- certaines cartes provoquent cette action
+|
+
+| Pion Secours
+| Pion représentant l'avancée de la partie côté Traqués. Plus le pion secours avance plus les Traqués sont proches de la victoire
+| - placé initialement sur le chiffre de sa
+piste respective correspondant au
+nombre de joueurs +
+- doit être avancé d'une case si : +
+- un tour se termine +
+- certaines cartes provoquent cette action
+|
+
+| Pion Volonté
+| Pion détenu par les Traqués qui lui permet de résister à la Créature, à chaque fois qu'un Traqué perd la totalité de ses pions volontés, la Créature gagne du terrain et se rapproche de la victoire jusqu'à un certain rang
+|- Si un Traqué perd son dernier pion Volonté, avancez immédiatement le pion Assimilation de 1 case, quel que soit le nombre de Traqués attrapés,puis chaque Traqué récupère ses 3 pions et ses cartes Lieu +
+- Chaque Traqué qui explore le lieu où se trouve le jeton Créature perd 1 pion Volonté
+|
+
+| Pion Balise
+| Se trouvant sur la carte Lieu plage, peut être activé par les traqués afin de faire avancer le pion secours et ainsi s'extirper d'Artemia et être secouru.
+|- Placé initialement : à côté de la carte Plage [5] +
+- peut être activer : retirer le pion Balise de la Plage et avancer le pion secours de 1 case+
+- peut être charger : mettre le pion Balise sur la Plage
+|
+
+| Jeton Créature
+|Jeton symbolisant la Créature, et permettant à la Créature de se déplacer lors de ses actions en se mouvant jusqu'à une carte lieu (par exemple en phase 2)
+|Est placé par la Créature sur une carte lieu +
+- permet de faire perdre un pion volonté aux traqués attrapés
+|La Créature décide de poser son jeton Créature sur la carte lieu rivière
+
+| Jeton Cible
+| Marquage spéciale sur une carte Traque, est utilisé par la Créature dans le but de déplacer le jeton cible sur la map Artemia.
+| est déplacé sur une des 10 cartes Lieu si : +
+-le symbole se trouve sur une carte Traque jouée.(phase 2)+
++
+- Les effets sont cumulables (2 cartes Traque avec le symbole entraine 2 actions de déplacement du jeton Cible)
+
+|
+
+| Jeton Artemia
+| Est utilisé par la Créature dans le but de localiser la prochaine manifestation d'artemia en déplaçant le jeton Artemia
+|est déplacé sur une des 10 cartes Lieu si : +
+- le symbole Artemia se trouve sur une carte Traque jouée ET/OU +
+- sur une carte située sous le pion Secours +
+ +
+- Les effets sont cumulables
+|
+
+| Réserve
+| Provision de cartes (allant de 1 à 3 en fonction du nombre de Traqués présent dans la partie)
+| - Composé avec les cartes Lieu numérotées de 6 à 10 +
+1 Traqué = 1 carte en réserve +
+2 Traqués = 2 cartes en réserve +
+3 Traqués = 3 cartes en réserve +
+|Dans notre exemple, nous avons 2 joueurs Traqués, joueur 1 et joueur 2 : il y aura donc 2 cartes dans la réserve
+
+| Phase 1
+|Phase d'Exploration où les Traqués pourront effectuer deux actions, résister ou lâcher prise, avant de jouer obligatoirement une carte lieu
+|_Jouer une carte lieu est obligatoire +
+_Chaque Traqué peut utiliser un pion de Volonté pour reprendre en main 2 cartes Lieu de sa défausse, ou 2 pions pour 4 cartes (Résister)
+_Chaque Traqué peut également récupérer tous ses pions volontés ainsi que ses cartes lieu défaussées mais cela entraîne l'avancement du pion assimilation (lâcher prise)
+_Si les Traqués perdent leur troisième pion Volonté lors d'une action "lâcher prise", là le pion Assimilation avance de 1 pour chaque Traqué qui a fait cette action
+|Joueur 1 sélectionne secrètement le Rover (carte 5), tandis que joueur 2 ira à la Rivière (3). Ils placent la carte face cachée devant eux en attendant la phase suivante
+
+| Phase 2
+|La phase de traque est entamé lorsque les Traqués ont fait leur choix (après la phase 1), c'est donc la Créature qui jouera et posera son jeton Créature sur une des 10 cartes lieux du plateaux où les joueurs Traqués auront pour rôle de trouver la carte lieu où se trouve les Traqués
+| La Créature pose sur les cartes Lieu formant Artemia : +
+- Le jeton Créature +
+- Le jeton Cible si le symbole se trouve sur une carte Traque jouée +
+- Le jeton Artemia si le symbole se trouve sur une carte Traque jouée ET/OU sur une case située sous le pion Secours
+|La Créature estime que les joueurs vont essayer de piocher de nouveaux lieux, et se place sur la Rover (5)
+
+| Phase 3
+|Phase de résolution : Les Explorateurs révèlent la carte Lieu qu’ils ont choisie, et ceux qui n’ont pas sélectionné la carte où la Bête s’est placée appliquent l’effet du Lieu. Les Traqués attrapés par la Créature augmentent les chances de victoire de celle-ci [la créature] (en avancant le pion assimilation)
+|
+- Chaque traqué dévoile ses cartes, et si un jeton artemia  se trouve sur sa carte lieu, il est attrapé par la créature sinon il ne l'est pas : +
+- Joueurs non attrapés (carte lieu sans jeton traque) : +
+- peuvent se déplacer vers la carte lieu dévoilée +
+- reprendre en main 1 carte Lieu au choix de sa défausse +
+[.small]#- NB :  Si une carte Traque rend le pouvoir d’un lieu inutilisable, le Traqué ne peut pas reprendre de carte Lieu de sa défausse#+
+ +
+- Chaque traqué qui explore le lieu où se trouve  : +
+- le jeton Cible : +
+- subit l’effet de la carte Traque +
+- peut ensuite utiliser le pouvoir de la carte Lieu OU reprendre en main 1 carte Lieu au choix de sa défausse. +
+[.small]#- NB :  Si une carte Traque rend le pouvoir d’un lieu inutilisable, le Traqué ne peut pas reprendre de carte Lieu de sa défausse#+
+ +
+- le jeton Artemia : +
+- défausse 1 carte Lieu de sa main +
+- Le pouvoir du lieu est inutilisable et le Traqué ne peut pas reprendre de carte Lieu de sa défausse
+
+- le jeton Créature : +
+- perd 1 pion Volonté +
+- Si au moins un joueur a été attrapé, le jeton Assimilation avance d’une case +
+- Les joueurs ayant été attrapés par la Créature : +
+- perdent 1 pion Volonté +
+- puis récupèrent toutes leurs cartes lieu ainsi que leur 3 pions volonté+
+|1 révèle le Rover (5), et 2 la Rivère (4). Le joueur 2 applique le pouvoir et pourra jouer deux cartes au tour suivant. Le joueur 1 a été attrapé par la Bête, non seulement il n’applique pas le pouvoir du Lieu, mais il perd 1 pion Volonté
+
+
+| Phase 4
+|Durant la phase de Maintenance, les joueurs placent la ou les cartes Lieu jouées dans leur défausse, et la Créature reprend ses jetons puis pioche des cartes Traque pour compléter sa main à 3. Le pion Secours avance d’une case
+|- Traqués : +
+- défausse leur carte Lieu jouée, face visible (La Créature doit toujours voir le numéro de toutes les cartes Lieu défaussées)+
+- La Créature : +
+- reprend ses jetons Traque +
+- pioche des cartes Traque jusqu’à avoir 3 cartes en main +
+- A la fin du tour : pion Secours avance d'une case et tant que la partie n'est pas finie, répétition des phases en reprenant à la phase d'exploration +
+|Le Rover du joueur 1 et la Rivière de 2 sont placés devant eux, visibles, avec les cartes qu’ils ont jouées précédemment. Le pion Secours avance et la Bête pioche. Si aucune équipe n’a gagné, un nouveau tour reprend lorsque la Créature est prête
+
+
+| Fin de partie
+| La partie se termine lorsque les traqués ont été assimilés par la créature (victoire de la Créature et défaite des Traqués) ou bien lorsque les traqués ont réussi à s'enfuir (défaite de la Créature et victoire des Traqués) +
+| - Victoire de la Créature : +
+- si le pion Assimilation atteint en premier la case Victoire +
+- Victoire des Traqués : +
+- si le pion Secours atteint en premier la case Victoire +
+| 1 et 2 ayant perdu leur pion volonté plusieurs fois, le pion Assimilation est arrivé au stade final, finalement 1 et 2 se retrouvent assimilés, la Créature a gagné.
 |===
