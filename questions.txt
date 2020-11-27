@@ -1,0 +1,5 @@
+
+1) Est-ce qu'on peut ajouter les classes et fonctio définies dans le package "game" dans le fichier game-server.thrift
+
+
+Classes Proxy aux côté Serveur qui communique avec le service client

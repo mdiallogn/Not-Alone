@@ -1,18 +1,14 @@
 include "common.thrift"
 
-struct CrossPlatformResource {
-    1: i32 id,
-    2: string name,
-    3: optional string salutation
+namespace java fr.univnantes.alma.thrift
+
+struct JoinRequest {
+    1: string name
 }
 
 service GameServerService {
 
-    CrossPlatformResource get(1:i32 id) throws (1:common.InvalidOperationException e),
+    i32 createGame(i32 numberOfPlayers)
 
-    void save(1:CrossPlatformResource resource) throws (1:common.InvalidOperationException e),
-
-    list <CrossPlatformResource> getList() throws (1:common.InvalidOperationException e),
-
-    bool ping() throws (1:common.InvalidOperationException e)
+    i32 join(i32 gameId, JoinRequest request) throws (1:common.GameNotFound e)
 }
