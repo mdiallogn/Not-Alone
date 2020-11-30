@@ -1,6 +1,6 @@
 package fr.univnantes.alma.model.cards;
 
-public abstract class Card {
+public class Card {
     private Object  title;
     private Phase phase;
     private String description;

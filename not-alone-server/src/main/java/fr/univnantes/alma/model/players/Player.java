@@ -22,17 +22,12 @@ public abstract class Player {
 
         }
 
-
         public UUID generateId(){
             UUID uniqID = UUID.randomUUID();
             return uniqID;
         }
 
         public void initialize(){
-
-        }
-
-        public void play(){
 
         }
 
@@ -54,5 +49,18 @@ public abstract class Player {
 
          public UUID getId() {
             return id;
+         }
+
+         // Piocher
+         public void draw(int nbOfCards){
+            if(this.discard.size()<nbOfCards){
+                System.err.println("il n'y a pas assez de cartes, veuillez diminuer le nombre");
+            }else {
+                for(int i = 0; i<nbOfCards; i++){
+                    Card card = this.discard.get(i);
+                    this.hand.add(card);
+                    this.discard.remove(card);
+                }
+            }
          }
 }

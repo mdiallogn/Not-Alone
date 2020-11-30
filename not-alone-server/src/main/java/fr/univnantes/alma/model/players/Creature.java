@@ -1,5 +1,7 @@
 package fr.univnantes.alma.model.players;
 
+
+
 public class Creature extends Player{
 
     public Creature(String name) {
@@ -7,6 +9,5 @@ public class Creature extends Player{
     }
 
     public void toTraque(Tracked tracked){
-
     }
 }
