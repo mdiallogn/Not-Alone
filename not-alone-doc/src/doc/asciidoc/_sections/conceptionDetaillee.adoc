@@ -1,0 +1,73 @@
+.GameSever
+[plantuml]
+....
+interface GameServer {
+    createGame(numberOfPlayers : Integer): Integer
+    join(gameId : Integer, rang : String, port:Integer ): Integer
+}
+
+package game {
+    class "GameServerController" as controller {
+        createGame(numberOfPlayers : Integer): Integer
+        join(gameId : Integer, rang : String, port:Integer ): Integer
+        updateLocal(idPlayer: Integer,  game: Game)
+        updateClients(players : Player [*] , game:Game)
+        giveTurn(idJoueur  : Integer, idGame : Integer)
+    }
+
+    class "Game \n[Thread]" as game {
+        id : Integer {id}
+        numberOfPlayers : Integer
+        phase : Integer
+        Game(numberOfPlayers: Integer)
+        addPlayer(idGame: Integer, idPlayer :Integer)
+        getListPlayer() : Player[*]
+        getIdGame() :  Integer
+        gameOver() : Boolean
+    }
+
+    class "Player" as player {
+        id : Integer {id}
+        player(Integer id)
+        getId() : Integer
+
+    }
+
+    class "Card" as Card {
+        id : Integer {id}
+        effect()
+
+    }
+
+    class "Jeton" as Jeton {
+        id : Integer {id}
+        effect()
+    }
+
+    class "CardCreature" as CardCreature {
+
+    }
+    class "CardTraque" as CardTraque {
+
+    }
+    class "Lieu" as Lieu {
+
+    }
+
+
+
+    GameServer <|-- controller
+    player <|-- Traqué
+    player <|-- Creature
+    controller *- "[*] games" game : \t\t\t
+    game *-- "[0..7] players" player
+    Card *-- "1" player : Main
+    Card *-- "1" player : Defausse
+    Card <|-- CardTraque
+    Card <|-- CardCreature
+    CardCreature <|-- Survie
+    CardCreature <|-- Lieu
+    CardTraque <|-- CarteX
+
+}
+

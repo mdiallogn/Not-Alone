@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>not-alone</artifactId>
     <groupId>fr.univnantes.alma</groupId>
@@ -21,7 +21,7 @@
         <configuration>
           <workingDirectory>./</workingDirectory>
           <nodeVersion>v14.11.0</nodeVersion>
-          <npmVersion>6.14.8</npmVersion>
+          <npmVersion>7.0.10</npmVersion>
         </configuration>
         <executions>
           <execution>
@@ -29,12 +29,17 @@
             <goals>
               <goal>install-node-and-npm</goal>
             </goals>
+            <phase>generate-resources</phase>
           </execution>
           <execution>
             <id>npm install</id>
             <goals>
               <goal>npm</goal>
             </goals>
+            <configuration>
+              <arguments>install</arguments>
+            </configuration>
+            <phase>generate-resources</phase>
           </execution>
           <execution>
             <id>npm run build</id>
@@ -46,11 +51,11 @@
             </configuration>
           </execution>
           <execution>
-            <id>code geneation</id>
-            <phase>generate-sources</phase>
-                        <goals>
-                            <goal>npm</goal>
-                        </goals>
+            <id>code generation</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>npm</goal>
+            </goals>
             <configuration>
               <arguments>run codegen</arguments>
             </configuration>

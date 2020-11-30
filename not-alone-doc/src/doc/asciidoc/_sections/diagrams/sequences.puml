@@ -6,8 +6,10 @@ database Server
 participant ClientWeb2
 actor Traqué
 
+Créature -> Server : idGame := CreateGame(6)
+Créature -> Server : playerId := join(id, one)
+Traqué -> Server : playerId := join(id, creature)
 
-Créature -> Server : joindre()
 Server -> Server : recherchePartie()
 Server -> Server : creerPartie(List<Joueur>)
 Server -> Créature : getIdPartie(partie)
