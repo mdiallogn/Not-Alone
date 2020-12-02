@@ -1,4 +1,4 @@
-package fr.univnantes.alma.model.tokens;
+package fr.univnantes.alma.model.utlis;
 
 public enum Token {
     CIBLE, CREATURE, ARTEMIA

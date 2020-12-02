@@ -8,6 +8,11 @@ public class Creature extends Player{
         super(name);
     }
 
+    @Override
+    public void initialize() {
+
+    }
+
     public void toTraque(Tracked tracked){
     }
 }

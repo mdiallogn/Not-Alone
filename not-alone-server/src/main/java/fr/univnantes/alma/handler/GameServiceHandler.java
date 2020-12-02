@@ -15,6 +15,8 @@ import java.util.List;
 @Component
 public class GameServiceHandler implements GameServerService.Iface {
 
+
+
     @Autowired
     GameService service;
 
@@ -49,3 +51,4 @@ public class GameServiceHandler implements GameServerService.Iface {
 
     }
 }
+

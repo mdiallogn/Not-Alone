@@ -1,6 +1,6 @@
 package fr.univnantes.alma;
 
-import fr.univnantes.alma.thrift.GameServerService;
+//import fr.univnantes.alma.thrift.GameServerService;
 import fr.univnantes.alma.handler.GameServiceHandler;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocolFactory;
@@ -34,4 +34,6 @@ public class NotAloneApplication {
 
         return new ServletRegistrationBean(tServlet, "/api");
     }
+
+
 }
