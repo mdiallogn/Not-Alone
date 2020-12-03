@@ -7,36 +7,33 @@ import fr.univnantes.alma.model.utlis.Phase;
 import java.util.UUID;
 
 public abstract class Card implements CardInterface {
-    private Object  title;
-    private Phase phase;
+    private Object name;
     private String description;
-    private UUID id;
+    private boolean power;
 
-    public Card(Object title, Phase phase) {
-        this.title = title;
-        this.phase = phase;
+    public Card(Object title) {
+        this.name = title;
+        this.power = false;
         this.description = this.addDescription(title);
-        this.id = this.generateId();
+        //this.id = this.generateId();
     }
 
-    public UUID generateId(){
-        UUID uniqID = UUID.randomUUID();
-        return uniqID;
-    }
 
     @Override
-    public UUID getId() {
-        return id;
+    public boolean getPower(){
+        return this.power;
     }
     @Override
-    public Object getTitle() {
-        return title;
+    public void setPower(boolean power){
+        this.power = power;
     }
 
     @Override
-    public Phase getPhase() {
-        return phase;
+    public Object getName() {
+        return name;
     }
+
+
     @Override
     public String getDescription() {
         return description;
@@ -44,7 +41,7 @@ public abstract class Card implements CardInterface {
 
     @Override
     public String toString(){
-        return "["+this.title+"\n"+this.description+"\n"+this.phase+"]";
+        return "["+this.name +"\n"+this.description+"]";
     }
 
     public abstract String addDescription(Object cardTitle);

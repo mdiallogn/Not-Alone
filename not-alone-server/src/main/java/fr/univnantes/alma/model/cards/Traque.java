@@ -1,11 +1,30 @@
 package fr.univnantes.alma.model.cards;
 
 import fr.univnantes.alma.model.utlis.Phase;
+import fr.univnantes.alma.model.utlis.Symbole;
 import fr.univnantes.alma.model.utlis.TraqueTitle;
 
 public class Traque extends Card{
+
+    private Phase phase;
+    private Symbole symbole;
+
     public Traque(TraqueTitle title, Phase phase) {
-        super(title, phase);
+        super(title);
+        this.phase = phase;
+    }
+
+    public Symbole getSymbole() {
+        return symbole;
+    }
+
+    public Traque(TraqueTitle title, Phase phase, Symbole symbole){
+        this(title, phase);
+        this.symbole = symbole;
+    }
+
+    public Phase getPhase() {
+        return phase;
     }
 
     @Override

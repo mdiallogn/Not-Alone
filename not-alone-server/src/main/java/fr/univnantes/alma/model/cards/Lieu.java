@@ -1,12 +1,32 @@
 package fr.univnantes.alma.model.cards;
 
 import fr.univnantes.alma.model.utlis.LieuTitle;
-import fr.univnantes.alma.model.utlis.Phase;
+
+import java.util.UUID;
+
 
 public class Lieu extends Card{
-    public Lieu(LieuTitle title, Phase phase) {
-        super(title, phase);
+
+
+    private UUID id;
+
+    public Lieu(LieuTitle title) {
+        super(title);
+
+        this.id = this.generateId();
+
     }
+
+    public UUID generateId(){
+        UUID uniqID = UUID.randomUUID();
+        return uniqID;
+    }
+
+
+    public UUID getId() {
+        return id;
+    }
+
 
     @Override
     public String addDescription(Object object){

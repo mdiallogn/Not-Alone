@@ -4,9 +4,18 @@ import fr.univnantes.alma.model.utlis.Phase;
 import fr.univnantes.alma.model.utlis.SurvieTitle;
 
 public class Survie extends Card {
+
+    private Phase phase;
     public Survie(SurvieTitle title, Phase phase) {
-        super(title, phase);
+        super(title);
+        this.phase = phase;
     }
+
+    public Phase getPhase() {
+        return phase;
+    }
+
+
 
     @Override
     public String addDescription(Object cardTitle) {

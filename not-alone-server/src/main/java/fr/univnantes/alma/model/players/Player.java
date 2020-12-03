@@ -20,15 +20,13 @@ public abstract class Player implements PlayerInterface {
             this.discards = new ArrayList<>();
             this.playedCards = new ArrayList<>();
             this.id = this.generateId();
-            this.initialize();
+            this.init();
         }
 
         public UUID generateId(){
             UUID uniqID = UUID.randomUUID();
             return uniqID;
         }
-
-        public abstract void initialize();
 
         @Override
         public List<CardInterface> getHand() {
@@ -72,4 +70,6 @@ public abstract class Player implements PlayerInterface {
             public String toString(){
             return this.id+"\n"+this.name;
          }
+
+         public abstract void init();
 }
