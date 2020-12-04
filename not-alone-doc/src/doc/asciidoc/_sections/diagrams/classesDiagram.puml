@@ -1,0 +1,185 @@
+@startuml
+
+package model{
+
+    package interfaces{
+        interface CardInterface{
+            getId() : UUID
+            getPhase() : Phase
+            getDescription() : String
+            getTitle() : Object
+        }
+        interface PlayerInterface{
+            getHand() : CardInterface[*]
+            getDiscards() : CardInterface[*]
+            getPlayedCards() : CardInterface[*]
+            getName() : String
+            getId() : UUID
+        }
+    }
+    package cards{
+        abstract class Card{
+            title : Object
+            description : String
+            id : UUID
+
+            Card(title: Object, phase: Phase)
+            generateId() : UUID
+            toString() : String
+            addDescription(cardTilte: Object): String
+            effect(cardTitle: Object)
+        }
+
+        class Lieu{
+            Lieu(title: LieuTile, phase: Phase)
+            abriEffect()
+            jungleEffect()
+            riviereEffect()
+            plageEffect()
+            roverEffect()
+            maraisEffect()
+            antreEffect()
+            epaveEffect()
+            sourceEffect()
+            artifactEffect()
+        }
+
+        class Survie{
+           Survie(title: SurvieTitle, phase: Phase)
+           vortexEffect()
+           esquiveEffect()
+           riposteEffect()
+           volteFaceEffect()
+        }
+
+        class Traque{
+            Traque(title: TraqueTitle, phase:Phase)
+            mutationEffect()
+            flashBackEffect()
+            acharnementEffect()
+            champsDeForceEffect()
+        }
+    }
+
+    package players{
+        class Player{
+
+            id: UUID
+            name: String
+
+            Player(name: String)
+            getId() : UUID
+            getName() : String
+            getHand() : CardInterface[*]
+            getDiscards() : CardInterface[*]
+            getPlayedCards() : CardInterface[*]
+            initialize()
+            draw(nbOfCards: Integer)
+            toString(): String
+
+        }
+        class Creature{
+            Creature(name: String)
+            toTraque(traqued: Tracked)
+        }
+        class Tracked{
+            Tracked(name: String)
+            letGo()
+            resist()
+        }
+        class MasterPlayer{
+
+        }
+    }
+
+    package util{
+
+        enum LieuTile{
+            ANTRE
+            JUNGLE
+            RIVIERE
+            PLAGE
+            ROVER
+            MARAIS
+            ABRI
+            EPAVE
+            SOURCE
+            ARTEFACT
+        }
+        enum Phase{
+            ONE
+            TWO
+            THREE
+            FOUR
+        }
+        enum SurvieTitle{
+            RIPOSTE
+            VORTEX
+            ESQUIVE
+            VOLTE_FACE
+        }
+        enum TraqueTitle{
+            ACHARNEMENT
+            CHAMPS_DE_FORCE
+            FLASHBACK
+            MUTATION
+        }
+
+    }
+
+    package pawns{
+        enum PawnName{
+                     BALISE
+                     ASSIMILATION
+                     SECOURS
+                     VOLONTE
+                     .................
+                }
+        class Pawn{
+            Pawn(name: PawnName)
+            getName(): PawnName
+        }
+
+        Pawn *--"has Name [1]" PawnName
+    }
+
+    package tokens{
+        enum TokenName{
+                    CIBLE
+                    CREATURE
+                    ARTEMIA
+                }
+        class Token{
+            Token(name: TokenName)
+            getName(): TokenName
+        }
+
+        Token *--"has Name [1]" TokenName
+    }
+
+ CardInterface <|.. Card
+            PlayerInterface <|.. Player
+
+            Card <|-- Lieu
+            Card <|-- Survie
+            Card <|-- Traque
+
+            Player <|-- Creature
+            Player <|-- Tracked
+
+             Player *--"hand [0..n]" CardInterface
+             Player *--"discards [0..n]\n" CardInterface
+             Player *--"playedCards [0..n]" CardInterface
+             Creature *-- "uses [0..n]" Lieu
+             Creature *-- "uses [0..n]" Traque
+             Card *-- "hasPhase [1]" Phase
+             Tracked *-- "hasCards [0..n]" Survie
+
+             Lieu *-- "hasTitle [1] \n\n" LieuTile
+             Survie *-- "hasTitle [1]" SurvieTitle
+             Traque *-- "hasTitle [1]" TraqueTitle
+
+
+}
+
+@enduml

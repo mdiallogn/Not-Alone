@@ -1,7 +1,5 @@
 package fr.univnantes.alma.common;
 
-import fr.univnantes.alma.common.GameJoinRequest;
-
 public interface GameService {
 
     /**

@@ -12,7 +12,6 @@ public class Lieu extends Card{
 
     public Lieu(LieuTitle title) {
         super(title);
-
         this.id = this.generateId();
 
     }

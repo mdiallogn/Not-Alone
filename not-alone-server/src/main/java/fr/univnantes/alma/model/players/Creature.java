@@ -23,10 +23,13 @@ public class Creature extends Player{
             }
             i++;
         }
-        if(card != null && !tracked.resist()){
-            this.getHand().get(i).setPower(true);
-            this.assimilate(tracked);
-            this.getHand().remove(card);
+        if(card != null){
+            boolean resist = tracked.resist();
+            if(!resist){
+                this.getHand().get(i).setPower(true);
+                this.assimilate(tracked);
+                this.getHand().remove(card);
+            }
         }
 
     }

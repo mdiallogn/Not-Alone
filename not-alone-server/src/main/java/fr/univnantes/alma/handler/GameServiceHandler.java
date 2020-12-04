@@ -1,7 +1,7 @@
 package fr.univnantes.alma.handler;
 
 import fr.univnantes.alma.common.GameJoinRequest;
-import fr.univnantes.alma.core.InvalidOperationException;
+import fr.univnantes.alma.thrift.InvalidOperationException;
 import fr.univnantes.alma.thrift.GameNotFound;
 import fr.univnantes.alma.thrift.GameServerService;
 import fr.univnantes.alma.thrift.JoinRequest;
@@ -29,26 +29,6 @@ public class GameServiceHandler implements GameServerService.Iface {
     public int join(int gameId, JoinRequest request) throws TException {
         //TODO: translate JoinRequest into GameJoinRequest
         return service.join(gameId, new GameJoinRequest());
-    }
-
-    @Override
-    public CrossPlatformResource get(int id) throws InvalidOperationException, TException {
-        return null;
-    }
-
-    @Override
-    public List<CrossPlatformResource> getList() throws InvalidOperationException, TException {
-        return null;
-    }
-
-    @Override
-    public boolean ping() throws InvalidOperationException, TException {
-        return false;
-    }
-
-    @Override
-    public void save(CrossPlatformResource resource) throws InvalidOperationException, TException {
-
     }
 }
 
