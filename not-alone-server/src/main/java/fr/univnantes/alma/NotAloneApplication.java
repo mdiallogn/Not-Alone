@@ -1,7 +1,7 @@
 package fr.univnantes.alma;
 
-import fr.univnantes.alma.thrift.GameServerService;
 import fr.univnantes.alma.handler.GameServiceHandler;
+import fr.univnantes.alma.thrift.GameService;
 import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocolFactory;
 import org.apache.thrift.server.TServlet;
@@ -29,10 +29,8 @@ public class NotAloneApplication {
 
     @Bean
     public ServletRegistrationBean gameServer(TProtocolFactory protocolFactory, GameServiceHandler handler) {
-        TServlet tServlet = new TServlet(new GameServerService.Processor<GameServiceHandler>(handler), protocolFactory);
+        TServlet tServlet = new TServlet(new GameService.Processor<GameServiceHandler>(handler), protocolFactory);
 
         return new ServletRegistrationBean(tServlet, "/api");
     }
-
-
 }

@@ -1,0 +1,18 @@
+
+[cols="30s,70n",options="header", frame=sides]
+|===
+| Item | Description
+
+| Rèle | Tout effet ou pouvoir qui contredit la règle prévaut sur elle
+| Informations | Les cartes Lieu défaussées par les Traqués sont visibles.
+                 Le nombre de cartes de chacun est connu
+                 On ne montre pas ses cartes aux autres
+| Cartes en main | Le nombre de cartes Survie qu’un Traqué peut détenir n’est pas limité
+| Durée des effets | Les effets des cartes Traque et des cartes Survie sont limités au tour de jeu en cours
+| Ordre de résolution descartes | Les effets des cartes Traque et des cartes Survie jouées lors d’une même phase sont résolus dans l’ordre
+                    dans lequel les cartes ont été jouées. En cas de conflit, la Créature décide de l’ordre de résolution
+| Pions Volonté | Un Traqué ne peut jamais avoir plus de 3 pions Volonté en sa possession
+                    Tout effet qui ferait perdre plus que les pions Volonté restants à un Traqué se limite à lui faire perdre
+                    les pions Volonté restants
+| Pioche Survie | Si, au moment de piocher, la pile des cartes Survie est vide : mélanger les cartes Survie défaussées pour
+                    former une nouvelle pioche

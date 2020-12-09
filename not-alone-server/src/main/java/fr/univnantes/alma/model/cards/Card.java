@@ -1,31 +1,26 @@
 package fr.univnantes.alma.model.cards;
 
 import fr.univnantes.alma.model.inerfaces.CardInterface;
-import fr.univnantes.alma.model.utlis.Phase;
-
-
-import java.util.UUID;
+import fr.univnantes.alma.model.inerfaces.PlayerInterface;
 
 public abstract class Card implements CardInterface {
     private Object name;
     private String description;
-    private boolean power;
+    private PlayerInterface owener;
 
-    public Card(Object title) {
-        this.name = title;
-        this.power = false;
-        this.description = this.addDescription(title);
-        //this.id = this.generateId();
+    public Card(Object name) {
+        this.name = name;
+        this.description = this.addDescription(name);
+        this.owener = null;
+    }
+
+    public PlayerInterface getOwener() {
+        return owener;
     }
 
 
-    @Override
-    public boolean getPower(){
-        return this.power;
-    }
-    @Override
-    public void setPower(boolean power){
-        this.power = power;
+    public void setOwener(PlayerInterface owener) {
+        this.owener = owener;
     }
 
     @Override
@@ -45,5 +40,5 @@ public abstract class Card implements CardInterface {
     }
 
     public abstract String addDescription(Object cardTitle);
-    public abstract void effect(Object cardTitle);
+    public abstract void executeEffect(Object cardTitle);
 }

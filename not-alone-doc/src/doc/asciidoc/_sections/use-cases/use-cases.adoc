@@ -88,4 +88,3 @@ include::mise-en-place.adoc[]
 === Déroulement
 
 include::deroulement.adoc[]
-

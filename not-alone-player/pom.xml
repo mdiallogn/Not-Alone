@@ -9,8 +9,8 @@
   </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>not-alone-web</artifactId>
-  <name>Not Alone Web Client</name>
+  <artifactId>not-alone-player</artifactId>
+  <name>Not Alone Player Services</name>
 
   <build>
     <plugins>
@@ -20,8 +20,8 @@
         <version>1.10.0</version>
         <configuration>
           <workingDirectory>./</workingDirectory>
-          <nodeVersion>v14.11.0</nodeVersion>
-          <npmVersion>7.0.10</npmVersion>
+          <nodeVersion>v12.19.0</nodeVersion>
+          <npmVersion>6.14.8</npmVersion>
         </configuration>
         <executions>
           <execution>
@@ -48,6 +48,16 @@
             </goals>
             <configuration>
               <arguments>run build</arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>code generation</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>run codegen</arguments>
             </configuration>
           </execution>
         </executions>

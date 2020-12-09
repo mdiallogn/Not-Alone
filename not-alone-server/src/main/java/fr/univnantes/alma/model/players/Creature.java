@@ -1,12 +1,20 @@
 package fr.univnantes.alma.model.players;
 
+import fr.univnantes.alma.model.board.Box;
+import fr.univnantes.alma.model.cards.Lieu;
 import fr.univnantes.alma.model.cards.Traque;
 import fr.univnantes.alma.model.inerfaces.CardInterface;
+import fr.univnantes.alma.model.tokens.Token;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Creature extends Player{
 
+    private List<Token> tokens;
     public Creature(String name) {
         super(name);
+        this.tokens = new ArrayList<>();
     }
 
     @Override
@@ -24,17 +32,26 @@ public class Creature extends Player{
             i++;
         }
         if(card != null){
-            boolean resist = tracked.resist();
-            if(!resist){
-                this.getHand().get(i).setPower(true);
+
+            if(!tracked.resist(1) && !tracked.resist(2)){
+                Lieu lieu = (Lieu) card;
+                lieu.setPower(true);
                 this.assimilate(tracked);
-                this.getHand().remove(card);
+                this.getHand().remove(lieu);
             }
         }
 
     }
 
     public void assimilate(Tracked palyer){
+
+    }
+
+    public void placeToken(Token token){
+
+    }
+
+    public void drawTraque(int nbCard){
 
     }
 }

@@ -23,6 +23,7 @@
         <module>not-alone-server</module>
         <module>not-alone-web</module>
         <module>not-alone-core</module>
+        <module>not-alone-player</module>
     </modules>
 
     <build>

@@ -1,7 +1,12 @@
 package fr.univnantes.alma.model.players;
 
+
+import fr.univnantes.alma.model.board.Box;
+import fr.univnantes.alma.model.cards.Card;
 import fr.univnantes.alma.model.inerfaces.CardInterface;
 import fr.univnantes.alma.model.inerfaces.PlayerInterface;
+import fr.univnantes.alma.model.pawns.Pawn;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +16,7 @@ public abstract class Player implements PlayerInterface {
     private List<CardInterface> hand;
     private List<CardInterface> discards;
     private List<CardInterface> playedCards;
+    private List<Pawn> pawns;
     private String name;
     private UUID id;
 
@@ -19,6 +25,7 @@ public abstract class Player implements PlayerInterface {
             this.hand = new ArrayList<>();
             this.discards = new ArrayList<>();
             this.playedCards = new ArrayList<>();
+            this.pawns = new ArrayList<>();
             this.id = this.generateId();
             this.init();
         }
@@ -28,7 +35,11 @@ public abstract class Player implements PlayerInterface {
             return uniqID;
         }
 
-        @Override
+    public List<Pawn> getPawns() {
+        return pawns;
+    }
+
+    @Override
         public List<CardInterface> getHand() {
             return hand;
         }
@@ -53,18 +64,7 @@ public abstract class Player implements PlayerInterface {
             return id;
          }
 
-         // Piocher
-         public void draw(int nbOfCards){
-            if(this.discards.size()<nbOfCards){
-                System.err.println("il n'y a pas assez de cartes, veuillez diminuer le nombre");
-            }else {
-                for(int i = 0; i<nbOfCards; i++){
-                    CardInterface card = this.discards.get(i);
-                    this.hand.add(card);
-                    this.discards.remove(card);
-                }
-            }
-         }
+
 
          @Override
             public String toString(){
@@ -72,4 +72,26 @@ public abstract class Player implements PlayerInterface {
          }
 
          public abstract void init();
+
+        public void placePawn(Pawn pawn, Box box){
+                if(box.getContains()==null){
+                    box.getContains().put(this, pawn);
+                }else {
+                    System.err.println("Unavailable box !");
+                }
+        }
+
+        public void mouvePawn(Pawn pawn, Box source, Box target){
+            this.placePawn(pawn, target);
+            source.getContains().clear();
+        }
+
+
+        public void playCard(Card card){
+            card.executeEffect(card.getName());
+            this.playedCards.add(card);
+            this.hand.remove(card);
+        }
+
+
 }

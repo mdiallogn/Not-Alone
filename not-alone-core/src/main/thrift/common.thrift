@@ -1,5 +1,5 @@
 namespace java fr.univnantes.alma.thrift
-namespace js core
+namespace js common
 
 exception InvalidOperationException {
     1: i32 code,

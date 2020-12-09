@@ -123,8 +123,5 @@
       }
     }
   },
-  "defaultProject": "not-alone-web",
-  "cli": {
-    "analytics": false
-  }
+  "defaultProject": "not-alone-web"
 }

@@ -126,7 +126,7 @@ nombre de joueurs +
 |est déplacé sur une des 10 cartes Lieu si : +
 - le symbole Artemia se trouve sur une carte Traque jouée ET/OU +
 - sur une carte située sous le pion Secours +
- +
++
 - Les effets sont cumulables
 |
 

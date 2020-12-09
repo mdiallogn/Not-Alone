@@ -1,6 +1,6 @@
 package fr.univnantes.alma;
 
-import fr.univnantes.alma.thrift.GameServerService;
+import fr.univnantes.alma.thrift.GameService;
 import fr.univnantes.alma.thrift.JoinRequest;
 import org.apache.thrift.TException;
 import org.apache.thrift.protocol.TProtocol;
@@ -24,7 +24,7 @@ class NotAloneApplicationTest {
     @LocalServerPort
     protected int port;
 
-    protected GameServerService.Iface client;
+    protected GameService.Iface client;
 
     @BeforeEach
     public void setUp() throws Exception {
@@ -32,7 +32,7 @@ class NotAloneApplicationTest {
 
         TProtocol protocol = protocolFactory.getProtocol(transport);
 
-        client = new GameServerService.Client(protocol);
+        client = new GameService.Client(protocol);
     }
 
     @Test

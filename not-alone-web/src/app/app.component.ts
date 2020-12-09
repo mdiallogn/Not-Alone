@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {JetonAndPionObject} from './jetonAndPionObject';
 
 @Component({
   selector: 'app-root',

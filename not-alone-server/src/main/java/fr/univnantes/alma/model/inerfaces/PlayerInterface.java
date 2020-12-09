@@ -1,7 +1,5 @@
 package fr.univnantes.alma.model.inerfaces;
 
-import fr.univnantes.alma.model.cards.Card;
-
 import java.util.List;
 import java.util.UUID;
 
