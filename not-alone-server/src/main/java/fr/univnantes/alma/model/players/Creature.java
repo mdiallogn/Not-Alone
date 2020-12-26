@@ -22,6 +22,10 @@ public class Creature extends Player{
 
     }
 
+    public List<Token> getTokens() {
+        return tokens;
+    }
+
     public void toTraque(Tracked tracked){
         CardInterface card = null;
         int i = 0;

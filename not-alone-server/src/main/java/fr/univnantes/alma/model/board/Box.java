@@ -1,5 +1,7 @@
 package fr.univnantes.alma.model.board;
 
+import fr.univnantes.alma.model.players.Player;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +12,7 @@ public class Box {
 
     private int x;
     private int y;
-    private Map<Object, Object> contains;
+    private Map<Player, Object> contains;
 
     public Box(int line, int column) {
         this.x = line;
@@ -27,7 +29,7 @@ public class Box {
         return y;
     }
 
-    public Map<Object, Object> getContains() {
+    public Map<Player, Object> getContains() {
         return contains;
     }
 }
