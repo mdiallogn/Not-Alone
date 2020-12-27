@@ -5,16 +5,16 @@ import * as express from 'express';
 import { createThriftServer } from '@creditkarma/thrift-server-express';
 
 const handler: ClientServiceHandler<express.Request> = new ClientServiceHandler<express.Request>();
-const PORT = 8090;
-
+const PORT = 8045;
 
 export class ThriftServer {
   private app: express.Application;
+
   constructor() {
     this.app = createThriftServer({
       path: '/thrift',
       thriftOptions: {
-        serviceName: 'calculator-service',
+        serviceName: 'game-service',
         handler: new GameService.Processor(handler),
       },
     });
@@ -23,4 +23,10 @@ export class ThriftServer {
     });
   }
 }
+
+let test: ThriftServer;
+test = new ThriftServer();
+
+
+
 

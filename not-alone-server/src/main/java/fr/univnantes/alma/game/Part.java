@@ -1,8 +1,8 @@
 package fr.univnantes.alma.game;
 
 import fr.univnantes.alma.model.board.Board;
-import fr.univnantes.alma.model.inerfaces.CardInterface;
-import fr.univnantes.alma.model.inerfaces.PlayerInterface;
+import fr.univnantes.alma.model.cards.CardInterface;
+import fr.univnantes.alma.model.players.PlayerInterface;
 import fr.univnantes.alma.model.pawns.Pawn;
 import fr.univnantes.alma.model.tokens.Token;
 

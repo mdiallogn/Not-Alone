@@ -1,4 +1,6 @@
-package fr.univnantes.alma.model.inerfaces;
+package fr.univnantes.alma.model.players;
+
+import fr.univnantes.alma.model.cards.CardInterface;
 
 import java.util.List;
 import java.util.UUID;

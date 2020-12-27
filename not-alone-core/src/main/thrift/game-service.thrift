@@ -11,5 +11,8 @@ service GameService {
 
     i32 createGame(i32 numberOfPlayers)
 
-    i32 join(i32 gameId, JoinRequest request) throws (1:common.GameNotFound e)
+    i32 join(i32 gameId, JoinRequest request)  throws  (1:common.GameNotFound e)
+
+    i32 add(i32 left, i32 right)
+
 }

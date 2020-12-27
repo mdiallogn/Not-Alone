@@ -3,8 +3,7 @@ package fr.univnantes.alma.model.players;
 
 import fr.univnantes.alma.model.board.Box;
 import fr.univnantes.alma.model.cards.Card;
-import fr.univnantes.alma.model.inerfaces.CardInterface;
-import fr.univnantes.alma.model.inerfaces.PlayerInterface;
+import fr.univnantes.alma.model.cards.CardInterface;
 import fr.univnantes.alma.model.pawns.Pawn;
 
 

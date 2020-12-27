@@ -23,4 +23,8 @@ export class ClientServiceHandler<Context> implements IHandler<Context> {
     }
 
 
+    public add(left: number, right: number): number | Promise<number> {
+        return Promise.resolve(right + left);
+    }
+
 }

@@ -25,4 +25,9 @@ public class GameServiceHandler implements GameService.Iface {
         return service.join(gameId, new GameJoinRequest());
     }
 
+    @Override
+    public int add(int left, int right) throws TException {
+        return left + right;
+    }
+
 }

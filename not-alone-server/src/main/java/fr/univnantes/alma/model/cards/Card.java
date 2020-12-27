@@ -1,7 +1,6 @@
 package fr.univnantes.alma.model.cards;
 
-import fr.univnantes.alma.model.inerfaces.CardInterface;
-import fr.univnantes.alma.model.inerfaces.PlayerInterface;
+import fr.univnantes.alma.model.players.PlayerInterface;
 
 public abstract class Card implements CardInterface {
     private Object name;

@@ -1,6 +1,6 @@
 package fr.univnantes.alma;
 
-import fr.univnantes.alma.model.inerfaces.PlayerInterface;
+import fr.univnantes.alma.model.players.PlayerInterface;
 import fr.univnantes.alma.model.players.Creature;
 import fr.univnantes.alma.model.players.Tracked;
 

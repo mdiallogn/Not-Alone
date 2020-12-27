@@ -1,4 +1,4 @@
-package fr.univnantes.alma.model.inerfaces;
+package fr.univnantes.alma.model.cards;
 
 
 public interface CardInterface {

@@ -1,7 +1,7 @@
 package fr.univnantes.alma.model.players;
 
 import fr.univnantes.alma.model.cards.Lieu;
-import fr.univnantes.alma.model.inerfaces.CardInterface;
+import fr.univnantes.alma.model.cards.CardInterface;
 import fr.univnantes.alma.model.pawns.Pawn;
 import fr.univnantes.alma.model.pawns.PawnName;
 
